@@ -17,7 +17,47 @@
 
 <body>
     <!-- start codes -->
+    <p>--Table--</p>
+    <!-- table>thead>tr>th{item $}*3^^tbody>tr>td{item $}*3^^tfoot>tr>th{item $} -->
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>Frontend</th>
+                <th>Backend</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Html5</td>
+                <td>Javase</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>css3</td>
+                <td>Javame</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>js</td>
+                <td>Javaee</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>bootstrap</td>
+                <td>nodeJS</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">&copy; Bütün Haklar Saklıdır</th>
+            </tr>
+        </tfoot>
+    </table>
 
+    <br>
+    <hr>
     <!-- Link -->
     <a href="http://www.ecodation.com" target="_blank">Ecodation</a>
     <img src="../image/mountains-gfaa146f37_1920.jpg" alt="isn't image" />
@@ -46,11 +86,12 @@
     <br>
     <hr>
 
+
+    <label for="java">Bildiğiniz teknoloji</label> <br />
     dropdown
-    <label for="java">Bildiğiniz teknoloji</label> <br/>
-    multiple: çoklu seçim 
+    multiple: çoklu seçim
     disabled: kapatmak
-    <br/>
+    <br />
     <select name="java" id="java" multiple disabled>
         <option value="0">Seçiniz</option>
         <option value="1">Javase</option>

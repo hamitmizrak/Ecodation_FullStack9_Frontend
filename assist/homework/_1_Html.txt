@@ -4,3 +4,6 @@
 3-) CDN => sha384
 4-) CDN => crossorigin
 5-) Semantic nedir ? non-semantic nedir ?
+6-) table colspan rowspan ?
+6-) ascii character nedir ?
+7-) unicode character nedir ?
