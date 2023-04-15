@@ -7,3 +7,4 @@
 6-) table colspan rowspan ?
 6-) ascii character nedir ?
 7-) unicode character nedir ?
+7-) form method="get" method="post" ?

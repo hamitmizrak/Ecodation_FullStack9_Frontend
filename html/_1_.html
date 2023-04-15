@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- favicon -->
-    <link rel="icon"  href="../image/mountains-gfaa146f37_1920.jpg">
+    <link rel="icon" href="../image/mountains-gfaa146f37_1920.jpg">
 
 </head>
 
@@ -23,26 +23,103 @@
     <!-- start codes -->
 
     <p>--Form--</p>
+    <form action="contact.html" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="p_username">Username</label></td>
+                    <td><input type="text" name="p_username" id="p_username" required placeholder="Adınızı yazınız..."
+                            autofocus></td>
+                </tr>
+
+                <tr>
+                    <td><label for="p_email">email</label></td>
+                    <td><input type="email" name="p_email" id="p_email" required placeholder="Email yazınız..."></td>
+                </tr>
+
+                <tr>
+                    <td><label for="username">Password</label></td>
+                    <td><input type="password" name="username" id="username" required
+                            placeholder="Şifrenizi yazınız..."></td>
+                </tr>
+
+                <tr>
+                    <td><label for="username">Dersler</label></td>
+                    <td>
+                        <input type="checkbox">Javase
+                        <input type="checkbox">Javame
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="username">Cinsiyet</label></td>
+                    <td>
+                        <input type="radio" name="gender">Bayan
+                        <input type="radio" name="gender">Erkek
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="reset">Temizle</button>
+                        <button type="submit">Gönder</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+
+    <br><br><br><br>
+    <form action="contact.html" method="post">
+        <div>
+            <label for="p_username">Username</label>
+            <input type="text" name="p_username" id="p_username" required placeholder="Adınızı yazınız..." autofocus>
+        </div>
+
+        <div>
+            <label for="p_email">email</label>
+            <input type="email" name="p_email" id="p_email" required placeholder="Email yazınız...">
+        </div>
+
+
+        <div>
+            <label for="username">Password</label>
+            <input type="password" name="username" id="username" required placeholder="Şifrenizi yazınız...">
+        </div>
+
+        <button type="reset">Temizle</button>
+        <button type="submit">Gönder</button>
+    </form>
 
     <br>
     <hr>
+    <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
     <!-- https://www.maps.ie/create-google-map/ -->
     <p>--map--</p>
-    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malatya+(Java)&amp;t=p&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe></div>
+    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malatya+(Java)&amp;t=p&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+    </div>
 
     <p>--ses--</p>
     <audio controls>
         <source src="horse.ogg" type="audio/ogg">
         <source src="horse.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
+        Your browser does not support the audio element.
+    </audio>
 
     <p>--video--</p>
     <video width="320" height="240" controls>
         <source src="movie.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
-      Your browser does not support the video tag.
-      </video>
+        Your browser does not support the video tag.
+    </video>
 
     <br>
     <hr>
