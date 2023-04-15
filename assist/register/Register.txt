@@ -1,0 +1,4 @@
+Aşağıdaki siteler kayıt olalım
+1-) DockerHub
+2-) Github
+3-) Oracle 

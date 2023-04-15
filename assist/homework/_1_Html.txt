@@ -1,0 +1,5 @@
+1-) CDN nedir ?
+2-) CDN => integrity nedir ?
+3-) CDN => sha384
+4-) CDN => crossorigin
+5-) Semantic nedir ? non-semantic nedir ?

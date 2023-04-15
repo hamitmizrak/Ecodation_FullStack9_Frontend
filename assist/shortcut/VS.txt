@@ -1,0 +1,3 @@
+Beautify Formatter ==> Shift+Alt+F
+Single Commet      ==> Ctrl+K+C
+Copy               ==> Ctrl+D
