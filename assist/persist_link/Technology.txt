@@ -3,6 +3,7 @@
 --Html-- 
 emmet.io cheat sheet =>  https://docs.emmet.io/cheat-sheet/
 Html tutorials       =>  https://www.w3schools.com/html/
+embedMap             =>  https://www.maps.ie/create-google-map/
 
 --css--  
 
