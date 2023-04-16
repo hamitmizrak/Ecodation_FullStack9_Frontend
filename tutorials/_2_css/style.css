@@ -1,7 +1,7 @@
 /*Multiple comment */
-*{
-    margin:0;
-    padding:0px;
+* {
+    margin: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -9,43 +9,75 @@
     color:brown;
 } */
 
-.div_class{
-    border:1px solid blue;
-    margin:1px;
+html {
+    font-size: 15px;
+}
+
+body {}
+
+/*Float kullanıyorsanız bunu kullanın*/
+.special_clear_fix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.div_class {
+    border: 1px solid blue;
+    margin: 1px;
     height: auto;
     width: 100%;
     float: left;
-    border-top-left-radius:5%;
-    border-top-right-radius:5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     border-radius: 5%;
 }
 
-.div_class  p{
-    color:blue;
-    color:#9af;
-    color:#5a3faf;
-    color:rgb(0,0,255);
-    color:rgba(0,0,255,0.9);
-    color:rgba(255,255,255,.9);
+.div_class:hover {
+    /* display: none; */
+    box-shadow: -1px 1px 10px 1px rgba(182, 82, 82, 0.8);
+}
+
+.div_class p {
+    color: blue;
+    color: #9af;
+    color: #5a3faf;
+    color: rgb(0, 0, 255);
+    color: rgba(0, 0, 255, 0.9);
+    color: rgba(255, 255, 255, .9);
 
     background-color: black;
 
-    padding-top:10px;
-    padding-right:10px;
-    padding-bottom:10px;
-    padding-left:10px;
-    padding:10px;
-    padding:10px 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding: 10px;
+    padding: 10px 20px;
 
-    margin-top:10px;
-    margin-right:10px;
-    margin-bottom:10px;
-    margin-left:10px;
-    margin:10px;
-    margin:10px 20px!important;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin: 10px;
+    margin: 10px 20px !important;
 
     /* text */
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: -1px 0px;
+    text-transform: uppercase;
+    text-indent: 25px;
 }
 
+.div_class p:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgba(255, 255, 255, .9);
+    display: block;
+    display: inline;
+    display: inline-block;
+
+}

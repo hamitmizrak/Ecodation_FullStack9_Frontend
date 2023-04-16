@@ -10,3 +10,8 @@
 8-) form method="get" method="post" ?
 9-) binary(2),octal(8),decimal(10),hexadecimal(16) nedir?
 
+
+-- CSS Araştırma Ödevleri --
+1-) display ile visibility arasındaki fark ?
+2-) display:none ile visibility:hidden arasındaki fark ?
+3-)
