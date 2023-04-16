@@ -1,0 +1,24 @@
+/*COMMON*/
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    /*width:400px ==> 400px=w+b+p*/
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    transition: 1.5s all;
+    background-color:var(--backColor) ;
+    color:var(--frontColor) ;
+    margin:2rem;
+}
+
+/*ROOT*/
+:root{
+    --backColor:#000000;
+    --frontColor:#fff;
+}
