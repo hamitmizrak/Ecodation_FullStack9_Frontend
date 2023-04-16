@@ -7,4 +7,6 @@
 6-) table colspan rowspan ?
 6-) ascii character nedir ?
 7-) unicode character nedir ?
-7-) form method="get" method="post" ?
+8-) form method="get" method="post" ?
+9-) binary(2),octal(8),decimal(10),hexadecimal(16) nedir?
+
