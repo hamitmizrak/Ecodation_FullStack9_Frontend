@@ -25,34 +25,39 @@
 
     <!-- register form : html -->
     <div id="form_out">
-        <h1>Register</h1>
-        <p>Fill out this form</p>
-        <form action="#" method="get" autocomplete="on">
-            <div>
-                <input type="text" name="first_name" id="first_name" required placeholder="First Name" autofocus>
+        <div class="container">
+            <div id="vocabulary">
+                <h1>Register</h1>
+                <p>Fill out this form</p>
             </div>
-            <div>
-                <input type="text" name="last_name" id="last_name" required placeholder="Last Name">
+            <form action="#" method="get" autocomplete="on">
+            <div class="col50">
+                <input type="text"  name="first_name" id="first_name" required placeholder="First Name" autofocus>
             </div>
-            <div>
+            <div class="col50">
+                <input type="text"  name="last_name" id="last_name" required placeholder="Last Name">
+            </div>
+            <div class="col100">
                 <input type="text" name="uname" id="uname" required placeholder="User Name">
             </div>
-            <div>
+            <div class="col100">
                 <input type="email" name="email_address" id="email_address" required placeholder="E-mail Address">
             </div>
-            <div>
+            <div class="col100">
                 <input type="password" name="passwd" id="passwd" required placeholder="Password">
             </div>
 
-            <div>
-                <input type="checkbox" name="form_check" id="form_check"> I aggree with the <span>Term and
-                    Conditions</span> and the <span>Privacy Policy</span>
+            <div id="input_checkbox">
+                <input type="checkbox" name="form_check" id="form_check"> I aggree with the <span class="border_bold">Term and
+                    Conditions</span> and the <span class="border_bold">Privacy Policy</span>
             </div>
-            <div>
+            <div id="div_submit">
                 <button>Create Account</button>
             </div>
         </form>
-    </div>
+        </div> <!-- end container-->
+
+    </div> <!-- end form_out-->
 
 
     <!--  ends codes -->

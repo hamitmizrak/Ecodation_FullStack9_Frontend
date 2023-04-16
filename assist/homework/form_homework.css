@@ -1,4 +1,4 @@
-/*COMMON*/
+/* ### COMMON  ###############################*/
 * {
     margin: 0;
     padding: 0px;
@@ -7,18 +7,85 @@
 }
 
 html {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 body {
     transition: 1.5s all;
-    background-color:var(--backColor) ;
-    color:var(--frontColor) ;
-    margin:2rem;
+    background-color: var(--backColor);
+    color: var(--frontColor);
+    margin: 2rem;
+    position: relative
 }
 
-/*ROOT*/
-:root{
-    --backColor:#000000;
-    --frontColor:#fff;
+ul {
+    list-style-type: none;
 }
+
+a {
+    text-decoration: none;
+}
+
+.col25 {
+    width: 25%;
+}
+
+.col50 {
+    width: 50%;
+}
+
+.col100 {
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    padding:2rem;
+    box-shadow: -1px 1px 4px 1px rgba(255,255,255,.9);
+    border-radius: 5%;
+}
+
+/* ### ROOT ###############################*/
+:root {
+    --backColor: #000000;
+    --frontColor: #fff;
+}
+
+/* ### Form ###############################*/
+
+#form_out{
+    text-align: center;
+}
+
+/*ilk p*/
+#vocabulary>p {
+    opacity: 0.7;
+}
+
+/*input*/
+.container>form>div>input{
+    margin-bottom: 0.5rem;
+}
+
+/*check box*/
+#input_checkbox {
+    margin-top: 0.7rem;
+}
+
+.border_bold {
+    font-weight: bolder;
+}
+
+/*Submit button*/
+#div_submit button {
+    background-color: blue;
+    color: white;
+    padding: 0.7rem;
+    margin-top: 0.7rem;
+    width: 100% !important;
+}
+
+/*
+Resim blur
+icon input içinde 
+*/
