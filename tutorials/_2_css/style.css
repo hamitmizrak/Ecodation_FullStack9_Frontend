@@ -9,7 +9,20 @@
     color:brown;
 } */
 
-.parag_class{
+.div_class{
+    border:1px solid blue;
+    margin:1px;
+    height: auto;
+    width: 100%;
+    float: left;
+    border-top-left-radius:5%;
+    border-top-right-radius:5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-radius: 5%;
+}
+
+.div_class  p{
     color:blue;
     color:#9af;
     color:#5a3faf;
@@ -31,7 +44,8 @@
     margin-bottom:10px;
     margin-left:10px;
     margin:10px;
-    margin:10px 20px;
+    margin:10px 20px!important;
 
+    /* text */
 }
 
