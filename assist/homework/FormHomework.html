@@ -15,8 +15,15 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
+<!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
     <!-- external css -->
     <link rel="stylesheet" href="form_homework.css">
+    <style>
+        
+
+       
+    </style>
 
 </head>
 
@@ -31,30 +38,40 @@
                 <p>Fill out this form</p>
             </div>
             <form action="#" method="get" autocomplete="on">
-            <div class="col50">
-                <input type="text"  name="first_name" id="first_name" required placeholder="First Name" autofocus>
-            </div>
-            <div class="col50">
-                <input type="text"  name="last_name" id="last_name" required placeholder="Last Name">
-            </div>
-            <div class="col100">
-                <input type="text" name="uname" id="uname" required placeholder="User Name">
-            </div>
-            <div class="col100">
-                <input type="email" name="email_address" id="email_address" required placeholder="E-mail Address">
-            </div>
-            <div class="col100">
-                <input type="password" name="passwd" id="passwd" required placeholder="Password">
-            </div>
+                <div class="left_side">
+                    <div class="col50 left-inner-addon" style="margin-right: 5px;">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <input  type="text" name="first_name" id="first_name" required placeholder="First Name"
+                            autofocus>
+                    </div>
+                    <div class="col50  left-inner-addon">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <input type="text" name="last_name" id="last_name" required placeholder="Last Name">
+                    </div>
+                </div>
 
-            <div id="input_checkbox">
-                <input type="checkbox" name="form_check" id="form_check"> I aggree with the <span class="border_bold">Term and
-                    Conditions</span> and the <span class="border_bold">Privacy Policy</span>
-            </div>
-            <div id="div_submit">
-                <button>Create Account</button>
-            </div>
-        </form>
+                <div class="col100  left-inner-addon">
+                    <i class="fa-solid fa-user-secret"></i>
+                    <input type="text" name="uname" id="uname" required placeholder="User Name">
+                </div>
+                <div class="col100  left-inner-addon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email_address" id="email_address" required placeholder="E-mail Address">
+                </div>
+                <div class="col100  left-inner-addon">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="passwd" id="passwd" required placeholder="Password">
+                </div>
+
+                <div id="input_checkbox">
+                    <input type="checkbox" name="form_check" id="form_check"> I aggree with the <span
+                        class="border_bold">Term and
+                        Conditions</span> and the <span class="border_bold">Privacy Policy</span>
+                </div>
+                <div id="div_submit">
+                    <button class="btn">Create Account</button>
+                </div>
+            </form>
         </div> <!-- end container-->
 
     </div> <!-- end form_out-->

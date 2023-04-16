@@ -15,7 +15,8 @@ body {
     background-color: var(--backColor);
     color: var(--frontColor);
     margin: 2rem;
-    position: relative
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -31,19 +32,14 @@ a {
 }
 
 .col50 {
-    width: 50%;
+    width: 49.6%;
+    float: left;
 }
 
 .col100 {
     width: 100%;
 }
 
-.container{
-    width: 100%;
-    padding:2rem;
-    box-shadow: -1px 1px 4px 1px rgba(255,255,255,.9);
-    border-radius: 5%;
-}
 
 /* ### ROOT ###############################*/
 :root {
@@ -52,9 +48,30 @@ a {
 }
 
 /* ### Form ###############################*/
-
-#form_out{
+#form_out {
     text-align: center;
+    position: relative;
+}
+
+.container {
+    width: 70%;
+    padding: 2rem;
+    box-shadow: -1px 1px 4px 1px rgba(255, 255, 255, .9);
+    border-radius: 5%;
+}
+
+/* ### Resmi arka planda blur göstermek ###############################*/
+#form_out::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    content: "";
+    background-image: url("../../image/mountains-gfaa146f37_1920.jpg");
+    background-size: cover;
+    opacity: .5;
+    z-index: -1;
 }
 
 /*ilk p*/
@@ -62,10 +79,51 @@ a {
     opacity: 0.7;
 }
 
-/*input*/
-.container>form>div>input{
-    margin-bottom: 0.5rem;
+/* ### Input ###############################*/
+/*ilk satırda inputlar araında mesafe*/
+.first_name {
+    margin-right: 10px;
+    background-color: blue;
 }
+
+/*input text,email,password*/
+input[type=text],
+input[type=email],
+input[type=password] {
+    background-color: rgb(224, 233, 230);
+    padding: 0.2rem;
+    border: none;
+    border-bottom: 2px solid rgb(20, 3, 175);
+    border-radius: 10px;
+    opacity: .5;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/*input:focus*/
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    background-color: #070707;
+    color: white;
+}
+
+/* input içine icon koymak */
+.icon {
+    color: white;
+    text-align: center;
+}
+
+.left-inner-addon input {
+    padding-left: 3rem !important;
+}
+
+.left-inner-addon i {
+    position: absolute;
+    padding: 1rem;
+}
+
 
 /*check box*/
 #input_checkbox {
@@ -77,15 +135,19 @@ a {
 }
 
 /*Submit button*/
-#div_submit button {
-    background-color: blue;
+
+
+
+.btn {
+    background-color: dodgerblue;
     color: white;
-    padding: 0.7rem;
-    margin-top: 0.7rem;
-    width: 100% !important;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
 }
 
-/*
-Resim blur
-icon input içinde 
-*/
+.btn:hover {
+    opacity: 1;
+}
