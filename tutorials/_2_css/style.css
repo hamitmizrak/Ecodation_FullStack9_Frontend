@@ -150,3 +150,32 @@ img:hover{
     transform: rotate(360deg);
 }
 
+/*Group Selector*/
+p{
+    background-color: red;
+}
+
+div{
+    background-color: blue; 
+}
+
+div,p{
+color:white;
+}
+
+div>p{
+   padding: 50px; 
+}
+
+/* div p{
+    padding: 50px; 
+ } */
+
+ div~p{
+    padding: 20px; 
+ }
+
+ div+p{
+    padding: 20px; 
+    background-color: blue;
+ }
