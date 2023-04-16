@@ -9,13 +9,53 @@
     color:brown;
 } */
 
+/*COMMON*/
 html {
     font-size: 15px;
 }
 
 body {
-   
+  margin: 5%; 
 }
+a{
+    text-decoration: none;
+    background-color: blue;
+    color:white;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 10%;
+}
+
+a:hover{
+    background-color: white;
+    color:blue;
+}
+
+a:visited{
+    background-color: rgb(233, 4, 4);
+    color:rgb(96, 185, 11);
+}
+
+ul{
+    list-style-type: none;
+}
+ul li{
+    background-color: black;
+    color:white;
+    padding: 2px;
+    display: inline-block;
+    margin:2px;
+    text-transform: uppercase;
+    transition: 2s all;
+    border-radius: 5%;
+}
+
+ul li:hover{
+    background-color: white;
+    color:black; 
+}
+
+/*DATA*/
 
 /*Float kullanıyorsanız bunu kullanın*/
 .special_clear_fix {
@@ -84,5 +124,5 @@ body {
     display: inline-block;
     transition: 2s all;
     transform: rotate(360deg);
-
 }
+
