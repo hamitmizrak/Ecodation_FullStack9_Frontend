@@ -15,13 +15,31 @@
 <body style="margin:.2rem;">
     <!-- start codes -->
 
+ 
+    <button>Gönder</button>
+    <button class="btn btn-primary  btn-sm ">Gönder</button>
+    <button class="btn btn-outline-primary  btn-sm ">btn-outline-primary</button>
+    <button class="btn btn-link  btn-sm ">btn-outline-primary</button>
+    <button class="btn btn-warning  btn-sm mb-2">btn-outline-primary</button>
+    <button class="btn btn-warning  btn-sm active">btn-outline-primary</button>
+    <button class="btn btn-warning  btn-sm disabled mt-2">btn-outline-primary</button>
+
+    <div> <button id="jquery_id_button" class="btn btn-primary mt-3">Submit</button></div>
+    <script>
+        $("#jquery_id_button").button("toggle");
+    </script>
+   
+
+    <hr>
+    <br>
     <!-- text -->
     <!-- 0-1-2-3-4-5 -->
 
     <!-- padding: iç boşluk
     p-1 p-2 
     mt-1,me-1,mb-5,ps-4, px,py  -->
-    <p class="display-1 border border-info text-warning text-capitalize bg-dark rounded mx-3 mt-3 px-5">Lorem ipsum dolor sit amet.</p>
+    <p class="display-1 border border-info text-warning text-capitalize bg-dark rounded mx-3 mt-3 px-5">Lorem ipsum
+        dolor sit amet.</p>
     <hr>
     <br>
     <!-- margin: dış boşluk
