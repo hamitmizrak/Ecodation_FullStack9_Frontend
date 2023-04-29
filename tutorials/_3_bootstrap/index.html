@@ -14,37 +14,188 @@
 
 <body style="margin:.2rem; box-sizing: border-box;">
 
-   
-    <p class="display-1 text-center text-uppercase text-primary">login</p>
-        <div class="container">
-            <div class="row">
-                <div class="col-2 border border-primary">
-                    <img src="../../image/tree-g85b679847_1280.jpg" class="img-fluid" alt="" srcset="">
-                </div>
-                <div class="col-8  border border-danger">
-                    <form action="" method="get" autocomplete="on">
-                        <!-- email -->
-                        <div class="form-group mb-4">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Email" required autofocus />
-                        </div>
 
-                        <div class="form-group mb-4">
-                            <label for="passwd">Password:</label>
-                            <input type="password" id="passwd" name="passwd" class="form-control" placeholder="Şifreniz" required />
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginId">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
                         </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+      </div>
+    </nav>
 
-                        <div class="form-group mb-4">
-                            <input type="reset" value="Temizle" class="btn btn-danger">
-                            <button type="submit" class="btn btn-primary"> Gönder </button>
-                        </div>
-                    </form>
+    <header>
+
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="../../image/bird-g14a315378_1920.jpg" class="w-100 d-block" alt="First slide">
                 </div>
-                <div class="col-2  border border-primary">
-                    <p class="text-center text-danger">Lorem ipsum dolor, sit amet </p>
+                <div class="carousel-item">
+                    <img src="../../image/mountains-gfaa146f37_1920.jpg" class="w-100 d-block" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../image/startup-g31ff96a6b_1920.jpg" class="w-100 d-block" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      
+    </header>
+
+
+    
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="loginId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="display-1 text-center text-uppercase text-primary">login</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2 border border-primary">
+                                <img src="../../image/tree-g85b679847_1280.jpg" class="img-fluid" alt="" srcset="">
+                            </div>
+                            <div class="col-8  border border-danger">
+                                <form action="" method="get" autocomplete="on">
+                                    <!-- email -->
+                                    <div class="form-group mb-4">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required autofocus />
+                                    </div>
+            
+                                    <div class="form-group mb-4">
+                                        <label for="passwd">Password:</label>
+                                        <input type="password" id="passwd" name="passwd" class="form-control" placeholder="Şifreniz" required />
+                                    </div>
+            
+                                    <div class="form-group mb-4">
+                                        <input type="reset" value="Temizle" class="btn btn-danger">
+                                        <button type="submit" class="btn btn-primary"> Gönder </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-2  border border-primary">
+                                <p class="text-center text-danger">Lorem ipsum dolor, sit amet </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
                 </div>
             </div>
         </div>
+    </div>
+    
+    <br><br>
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="#">Main</a>
+        <a class="breadcrumb-item" href="#">Sub</a>
+        <span class="breadcrumb-item active" aria-current="page">Active</span>
+    </nav>
+    
+   
+<div class="container">
+    <div class="row">
+        <div class="col-4"><div class="card">
+            <img class="card-img-top" src="../../image/startup-g31ff96a6b_1920.jpg" alt="Title">
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+            </div>
+        </div></div>
+        <div class="col-4"><div class="card">
+            <img class="card-img-top" src="../../image/startup-g31ff96a6b_1920.jpg" alt="Title">
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+            </div>
+        </div></div>
+        <div class="col-4"><div class="card">
+            <img class="card-img-top" src="../../image/startup-g31ff96a6b_1920.jpg" alt="Title">
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+            </div>
+        </div></div>
+    </div>
+</div>
+    
+ 
+<div class="d-flex justify-content-start align-items-start">
+    <div class="spinner-border text-secondary spinner-grow-sm"
+        role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip Content">
+    Button name
+</button>
+
+<!-- Flexbox container for aligning the toasts -->
+<div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="min-height: 200px;">
+
+    <!-- Then put toasts within -->
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="" class="rounded me-2" alt="{4:Bootstrap}">
+        <strong class="me-auto">{4:Bootstrap}</strong>
+        <small>{5:11 mins ago}</small>
+        <button type="button" class="ms-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+  </div>
+
+
+
+$('.toast').toast(option)
     
     <hr><br>
     <table class="table table-hover table-striped table-responsive table-bordered ">
