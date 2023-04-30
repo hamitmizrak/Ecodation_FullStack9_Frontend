@@ -193,6 +193,7 @@ console.log(Math.floor(Math.random()*9+1)); // 1<=X<=9
 // jquery nedir ?
 // todo list html5/css3/RD/bootstrap/JS/jQuery
 // todo list html5/css3/RD/bootstrap/JS/jQuery/jquery POST
+// todo list html5/css3/RD/bootstrap/JS/jQuery/ Java, springDATA, springAPI
 // +ES5
 
 // araştırma ödevleri ?
@@ -208,4 +209,9 @@ console.log(Math.floor(Math.random()*9+1)); // 1<=X<=9
 // api nedir ?
 // ajax nedir ?
 // jquery post ?
+
+// GİT / Linux codes ?
+// sıfırdan bir bir UI pojesi yapacağız. Web site Frontend?
+
+// 1.HAFTA Çalışma ara tatili ?
 
