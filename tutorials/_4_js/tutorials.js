@@ -61,3 +61,69 @@ data="Nasılsınız";
 console.log(typeof data);
 data=55;
 console.log(typeof data);
+
+
+// whoisting
+firstWrite="Merhabalar99";
+console.log(typeof firstWrite);
+var firstWrite;
+
+// variable initialization
+let data44="Kelime";
+console.log(data44);
+
+// operator
+let number1=11,number2=2;
+console.log("Toplam =>"+ (number1+number2))
+console.log("Çıkarma =>"+ (number1-number2))
+console.log("Çarpma =>"+ (number1*number2))
+console.log("Bölme =>"+ (number1/number2))
+console.log("Kalan =>"+ (number1%number2))
+
+// &&=VE ||=VEYA  ! DEĞİL  !=EŞİT DEĞİL
+
+//ARTIRMA (+) AZALMA(-)
+let counter=1;
+//counter++;
+//counter=counter+1;
+counter+=1;
+console.log(counter)
+// ++ = 1 artır
+// ++ = 1 artır
+// ++ = 1 artır
+// X++ ==> İşlemden sonra topla        (postfix increment)
+// ++X ==> önce topla sonra işlem yap  (prefix increment)
+
+
+// typeof
+let data96=true;
+// dizinin Türü nedir ?
+console.log(typeof data96)
+
+// instanceof
+let dizi=["Malatya","Elazığ","Urfa"];
+// dizinin Türü Array mi?
+console.log(dizi instanceof Array); // output => true
+console.log(dizi instanceof Object);// output => true
+console.log(dizi instanceof Number);// output => false
+console.log(dizi instanceof String);// output => false
+
+// prompt
+let userData=prompt("Lütfen birşeyler yazınız");
+alert(userData);
+
+// cast
+let userData2=String(prompt("Lütfen birşeyler yazınız")) ;
+alert(userData2);
+
+let userData3=Number(prompt("Lütfen bir sayı yazınız")) ;
+alert(Math.sqrt(userData3) );
+
+
+// undefined
+// NaN
+// infinity
+// new 
+// this
+// null
+// Math
