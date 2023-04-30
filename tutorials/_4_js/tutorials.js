@@ -168,6 +168,43 @@ console.log(Math.floor(Math.random()*9+1)); // 1<=X<=9
 // s5-) Bu sayılardan en küçüğü mutlak değeri nedir ? (abs(min))
 // s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım(pow(min,max))
 
+//////////////////////////// 
+// GELECEK HAFTA
+// todo list html5/css3/RD/bootstrap
+// number 
+// string 
+// function (normal, anonymous, arrowfunction)
+// condititonal
+// Loop 
+// try catch ,exception handling
+// debug nasıl atılır?
+// senkron , asenkron nedir 
+// monad nedir ?, function 
+// call back function
+// promise function
+// async await function
+// dizi
+// object 
+// DOM
+// event 
+// listener 
+// local storage
+// jquery nedir ?
+// todo list html5/css3/RD/bootstrap/JS/jQuery
+// todo list html5/css3/RD/bootstrap/JS/jQuery/jquery POST
+// +ES5
 
-
+// araştırma ödevleri ?
+// Senkron ile asenkron arasındaki farklar nelerdir ?
+// Libraries ile Framework arasındaki farklar nelerdir ?
+// Unicode Ascii codes nedir ?
+// npm nedir ?
+// webpack nedir ?
+// live-server nedir ?
+// babel nedir ?
+// ecmascript nedir ?
+// typescript nedir ?
+// api nedir ?
+// ajax nedir ?
+// jquery post ?
 
