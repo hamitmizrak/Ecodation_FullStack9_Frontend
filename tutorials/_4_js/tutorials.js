@@ -158,6 +158,7 @@ console.log(Math.round(3.5));
 //rastgele 
 console.log(Math.floor(Math.random()*9+1)); // 1<=X<=9
 
+
 //// MATH ÖDEVİ
 // Math Ödev
 // Kullanıcıda tarafından aldığımız 2 tane sayının (prompt)
@@ -178,9 +179,9 @@ console.log(Math.floor(Math.random()*9+1)); // 1<=X<=9
 // Loop 
 // try catch ,exception handling
 // debug nasıl atılır?
-// senkron , asenkron nedir 
-// monad nedir ?, function 
-// call back function
+// senkron , asenkron nedir
+// monad nedir ?, function,
+// call back function,
 // promise function
 // async await function
 // dizi
