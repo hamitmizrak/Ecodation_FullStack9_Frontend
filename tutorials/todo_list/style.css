@@ -1,1 +1,78 @@
 /* todo list css */
+
+
+/* ### All Content  ### */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(155deg, #d44a38, #2c0803);
+}
+
+/* ### Todo  ### */
+.todo_container {
+    margin: 10rem auto;
+    padding: 1rem;
+    background-color: rgba(15, 0, 0, 0.8);
+    border-radius: 1rem;
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/*input ile icon*/
+.todo_input {
+    position: relative;
+    height: 6.5rem;
+    padding: 0 6rem;
+}
+
+/*icon*/
+#icon_id {
+    position: absolute;
+    top: 3.3rem;
+    font-size: 1.5rem;
+    color: black;
+    transform: translate(1rem -55%);
+    margin-left:1rem;
+}
+
+/*input_id*/
+#input_id{
+    width: 100%;
+    height: 120%;
+    padding: 0 4rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 20px 1px rgba(102, 100, 228, 0.8);
+}
+
+/*input_id focus*/
+#input_id:focus{
+    background-color: rgb(220, 224, 248);
+    color:white;
+}
+
+#input_id::placeholder{
+    color:rgba(0,0,0,1)
+}
+
+/*todo_attributes*/
+.todo_attributes{
+    width: 100%;
+    color:#ffc107;
+    text-transform: uppercase;
+
+    padding:1rem auto;
+    text-align: center;
+    margin-left:3rem;
+}
