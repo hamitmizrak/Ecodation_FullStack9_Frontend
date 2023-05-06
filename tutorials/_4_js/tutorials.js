@@ -207,36 +207,39 @@ let number1=44;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // string 
-let vocabulary="Javascript Öğreniyorum Javascript ";
-console.log(vocabulary);
-console.log(typeof vocabulary);
-console.log(typeof String(4));
+// let vocabulary="Javascript Öğreniyorum Javascript ";
+// console.log(vocabulary);
+// console.log(typeof vocabulary);
+// console.log(typeof String(4));
 
-console.log(vocabulary.length);
-console.log(vocabulary.trim().length);
-console.log(vocabulary.toUpperCase());
-console.log(vocabulary.toLowerCase());
-console.log(vocabulary.charAt(0));
-console.log(vocabulary.indexOf("Javascript"));
-console.log(vocabulary.lastIndexOf("Javascript"));
+// console.log(vocabulary.length);
+// console.log(vocabulary.trim().length);
+// console.log(vocabulary.toUpperCase());
+// console.log(vocabulary.toLowerCase());
+// console.log(vocabulary.charAt(0));
+// console.log(vocabulary.indexOf("Javascript"));
+// console.log(vocabulary.lastIndexOf("Javascript"));
 
-console.log(vocabulary.substring(11));
-console.log(vocabulary.substring(11).toUpperCase());
-console.log(vocabulary.substring(0,5));
+// console.log(vocabulary.substring(11));
+// console.log(vocabulary.substring(11).toUpperCase());
+// console.log(vocabulary.substring(0,5));
 
-console.log(vocabulary.concat("sona ekler"));
-console.log(vocabulary.startsWith("Javascript"));
-console.log(vocabulary.endsWith(" "));
-console.log(vocabulary.replace(vocabulary,"değişti"));
+// console.log(vocabulary.concat("sona ekler"));
+// console.log(vocabulary.startsWith("Javascript"));
+// console.log(vocabulary.endsWith(" "));
+// console.log(vocabulary.replace(vocabulary,"değişti"));
 
 
 // ÖDEV NOT:5 adımı beraber yapalım
 // kullanıcı tarafından girilen bir kelimenin (prompt)
+let userData= prompt("Lütfen bir şeyler yazınız")  ;
 // S-1) Kaç karakterlidir ? (length)
 // S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
 // S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
 // S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
-// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, indexOf,subString)
+// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
+//console.log(userData.replace("xxxxxxx"),"javascript");
+console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
 // S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
 // S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
 // S-8) ilk harf nedir  ? (charAt())
