@@ -4,7 +4,7 @@
 // <!-- --> HTML
 // /* */  CSS
 // //     JS
-/*multiple Comment*/  
+/*multiple Comment*/
 
 // Çıktı 
 // console.log("console");
@@ -172,7 +172,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // GELECEK HAFTA
 // number 
-let number1=44;
+let number1 = 44;
 // number1=44.23;
 // console.log(number1);
 // console.log(typeof  number1); // typeof
@@ -232,27 +232,57 @@ let number1=44;
 
 // ÖDEV NOT:5 adımı beraber yapalım
 // kullanıcı tarafından girilen bir kelimenin (prompt)
-let userData= prompt("Lütfen bir şeyler yazınız")  ;
+//let userData= prompt("Lütfen bir şeyler yazınız")  ;
 // S-1) Kaç karakterlidir ? (length)
 // S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
 // S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
 // S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
 // S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
 //console.log(userData.replace("xxxxxxx"),"javascript");
-console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
+//console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
 // S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
 // S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
 // S-8) ilk harf nedir  ? (charAt())
 // S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
 // S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// function (normal, anonymous, arrowfunction, immediafunction)
 
+// NORMAL FUNCTION
+// 1
+function returnsuzParametresiz() {
+    console.log("1-returnsuz Parametresiz")
+}
+returnsuzParametresiz();
+
+
+// 2
+function returnsuzParametreli(name) {
+    console.log("2- returnsuz Parametreli " + name)
+}
+returnsuzParametreli("Hamit");
+
+// 3
+function returnluParametresiz() {
+    return "3- returnlu Parametresiz";
+}
+let data3=returnluParametresiz();
+console.log(data3);
+
+// 4
+function returnluParametreli(name,surname) {
+    return "4- returnlu Parametreli "+String(name).toUpperCase()+" surname="+surname;
+}
+let data4=returnluParametreli("Hamit","Mızrak");
+console.log(data4);
+
+////////
+//normal, anonymous, arrowfunction, immediafunction
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-
-// function (normal, anonymous, arrowfunction)
 // condititonal
-// Loop 
+// Loop
 // try catch ,exception handling
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // todo list html5/css3/RD/bootstrap
@@ -263,10 +293,10 @@ console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javasc
 // promise function
 // async await function
 // dizi
-// object 
+// object
 // DOM
-// event 
-// listener 
+// event
+// listener
 // local storage
 // jquery nedir ?
 // todo list html5/css3/RD/bootstrap/JS/jQuery
