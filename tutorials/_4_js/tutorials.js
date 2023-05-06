@@ -281,64 +281,120 @@ let number1 = 44;
 
 // PARAMETRESIZ (normal, anonymous, arrowfunction)
 // 1-NORMAL PARAMETRESIZ 
-function normalParametresizFunction() {
-    console.log("Normal Function")
-}
-normalParametresizFunction();
+// function normalParametresizFunction() {
+//     console.log("Normal Function")
+// }
+// normalParametresizFunction();
 
-// 2-NORMAL PARAMETRELI
-function normalParametreliFunction(name) {
-    console.log("Normal Function "+String(name).substring(0,2).concat("***"))
-}
-normalParametreliFunction("Hamit");
+// // 2-NORMAL PARAMETRELI
+// function normalParametreliFunction(name) {
+//     console.log("Normal Function "+String(name).substring(0,2).concat("***"))
+// }
+// normalParametreliFunction("Hamit");
 
-//////////////////////////////
-// 3-ANONYMOUS PARAMETRESIZ(Dikkat: değişken fonksiyonu üzerinde çağıracağız)
-let anonymousParametresizFunction= function () {
-    console.log("Anonymous Function ")
-}
-anonymousParametresizFunction();
+// //////////////////////////////
+// // 3-ANONYMOUS PARAMETRESIZ(Dikkat: değişken fonksiyonu üzerinde çağıracağız)
+// let anonymousParametresizFunction= function () {
+//     console.log("Anonymous Function ")
+// }
+// anonymousParametresizFunction();
 
-// 4-ANONYMOUS PARAMETRELI(Dikkat: değişken fonksiyonu üzerinde çağıracağız)
-let anonymousParametreliFunction= function (name) {
-    console.log("Anonymous Function "+String(name).substring(0,2).concat("***"))
-}
-anonymousParametreliFunction("Hamit");
+// // 4-ANONYMOUS PARAMETRELI(Dikkat: değişken fonksiyonu üzerinde çağıracağız)
+// let anonymousParametreliFunction= function (name) {
+//     console.log("Anonymous Function "+String(name).substring(0,2).concat("***"))
+// }
+// anonymousParametreliFunction("Hamit");
 
-//////////////////////////////
+// //////////////////////////////
 
-// 5-ARROW PARAMETRESIZ FUNCTION (Dikkat: değişken fonksiyonu üzerinde çağıracağız)
-let arrowParametresizFunction =  () => {
-    console.log("Arrow Function11 ")
-}
-arrowParametresizFunction();
+// // 5-ARROW PARAMETRESIZ FUNCTION (Dikkat: değişken fonksiyonu üzerinde çağıracağız)
+// let arrowParametresizFunction =  () => {
+//     console.log("Arrow Function11 ")
+// }
+// arrowParametresizFunction();
 
-// 6-ARROW PARAMETRESIZ FUNCTION (Dikkat: değişken fonksiyonu üzerinde çağıracağız)
-// 6.1
-let arrowParametreliFunction1 =  (name) => {
-    console.log("Arrow Function22 "+String(name).substring(0,2).concat("***"))
-}
-arrowParametreliFunction1("Hamit");
+// // 6-ARROW PARAMETRESIZ FUNCTION (Dikkat: değişken fonksiyonu üzerinde çağıracağız)
+// // 6.1
+// let arrowParametreliFunction1 =  (name) => {
+//     console.log("Arrow Function22 "+String(name).substring(0,2).concat("***"))
+// }
+// arrowParametreliFunction1("Hamit");
 
-// 6.2
-let arrowParametreliFunction2 =  (name) => {
-     return "Arrow Function33 "+String(name).substring(0,2).concat("***");
-}
-let arrow2=arrowParametreliFunction2("Hamit");
-console.log(arrow2);
+// // 6.2
+// let arrowParametreliFunction2 =  (name) => {
+//      return "Arrow Function33 "+String(name).substring(0,2).concat("***");
+// }
+// let arrow2=arrowParametreliFunction2("Hamit");
+// console.log(arrow2);
 
-// 6.3 Eğer 1 tane veri döneceksek {} yazmak zorunda değiliz. ancak bu return oluyor
-let arrowParametreliFunction3 =  (name) => "Arrow Function44 "+String(name).substring(0,2).concat("***");
-let arrow3=arrowParametreliFunction3("Hamit");
-console.log(arrow3)
-
-
-
+// // 6.3 Eğer 1 tane veri döneceksek {} yazmak zorunda değiliz. ancak bu return oluyor
+// let arrowParametreliFunction3 =  (name) => "Arrow Function44 "+String(name).substring(0,2).concat("***");
+// let arrow3=arrowParametreliFunction3("Hamit");
+// console.log(arrow3)
 
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // condititonal
+// if else 
+let numberCon1 = 4;
+if (numberCon1 >= 10) {
+    console.log("10'dan büyüktür")
+} else {
+    console.log("10'dan küçüktür")
+}
+// ternary(kısayolu)
+let result = (numberCon1 >= 10) ? "10'dan büyüktür" : "10'dan küçüktür";
+console.log(result)
+
+// birden fazla karar
+let numberCon2 = 4;
+// 4 "4"
+if (numberCon2 == 1) { // 2 tane eşit olmasına bakılır. Türüne bakılmaz. number,string,boolean
+    console.log("1")
+    // 4 "4"
+} else if (numberCon2 === 2) { // 3 tane eşit olmasına bakılır. Türüne bakılır.
+    console.log("2")
+} else if (numberCon2 === 3) {
+    console.log("3")
+} else if (numberCon2 === 4) {
+    console.log("4")
+} else if (numberCon2 === 5) {
+    console.log("5")
+} else if (numberCon2 === 6) {
+    console.log("6")
+} else {
+    console.log("farklıdır")
+}
+
+// Debug nasıl atılır
+//  switch case
+switch (numberCon2) {
+    case 1:
+        console.log("1")
+        break;
+    case 2:
+        console.log("2")
+        break;
+    case 3:
+        console.log("3")
+        break;
+    case 4:
+        console.log("4")
+        break;
+    case 5:
+        console.log("5")
+        break;
+    case 6:
+        console.log("6")
+        break;
+    default:
+        console.log("farklıdır")
+        break;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 // Loop
 // try catch ,exception handling
 /////////////////////////////////////////////////////////////////////////////////////////////////
