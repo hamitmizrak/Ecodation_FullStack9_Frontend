@@ -309,15 +309,29 @@ anonymousParametreliFunction("Hamit");
 
 // 5-ARROW PARAMETRESIZ FUNCTION (Dikkat: değişken fonksiyonu üzerinde çağıracağız)
 let arrowParametresizFunction =  () => {
-    console.log("Arrow Function ")
+    console.log("Arrow Function11 ")
 }
 arrowParametresizFunction();
 
 // 6-ARROW PARAMETRESIZ FUNCTION (Dikkat: değişken fonksiyonu üzerinde çağıracağız)
-let arrowParametreliFunction =  (name) => {
-    console.log("Arrow Function "+String(name).substring(0,2).concat("***"))
+// 6.1
+let arrowParametreliFunction1 =  (name) => {
+    console.log("Arrow Function22 "+String(name).substring(0,2).concat("***"))
 }
-arrowParametreliFunction("Hamit");
+arrowParametreliFunction1("Hamit");
+
+// 6.2
+let arrowParametreliFunction2 =  (name) => {
+     return "Arrow Function33 "+String(name).substring(0,2).concat("***");
+}
+let arrow2=arrowParametreliFunction2("Hamit");
+console.log(arrow2);
+
+// 6.3 Eğer 1 tane veri döneceksek {} yazmak zorunda değiliz. ancak bu return oluyor
+let arrowParametreliFunction3 =  (name) => "Arrow Function44 "+String(name).substring(0,2).concat("***");
+let arrow3=arrowParametreliFunction3("Hamit");
+console.log(arrow3)
+
 
 
 
