@@ -169,15 +169,16 @@ console.log(Math.floor(Math.random()*9+1)); // 1<=X<=9
 // s5-) Bu sayılardan en küçüğü mutlak değeri nedir ? (abs(min))
 // s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım(pow(min,max))
 
-//////////////////////////// 
+/////////////////////////////////////////////////////////////////////////////////////////////////
 // GELECEK HAFTA
-// todo list html5/css3/RD/bootstrap
 // number 
 // string 
 // function (normal, anonymous, arrowfunction)
 // condititonal
 // Loop 
 // try catch ,exception handling
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// todo list html5/css3/RD/bootstrap
 // debug nasıl atılır?
 // senkron , asenkron nedir
 // monad nedir ?, function,

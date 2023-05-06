@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Todo List</title>
+    <!-- Türkçe karakter çözümü -->
+    <meta charset="utf-8">
+
+    <!-- Responsive design icin  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- favicon -->
+    <link rel="icon" href="../image/mountains-gfaa146f37_1920.jpg">
+
+    <!-- font-awesome 6 -->
+    <!-- bootstrap icon veya google font  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+
+    <div class="todo_container">
+        <div class="todo_row">
+            <i name="icon_position" id="icon_id" class="fa-solid fa-pen-to-square"></i>
+          <input id="input_id" ondblclick="inputCleaner()" type="text" placeholder="Liste yaz ...">
+        </div>
+        <div class="controls">
+          <div class="filters">
+            <span class="active" id="all">Hepsi</span>
+            <span id="active">Yapılacak</span>
+            <span id="completed">Tamamlanmış</span>
+          </div>
+          <button class="todo_clear">Temizle</button>
+        </div>
+        <ul class="todo_ul"></ul>
+      </div>
+
+          <!-- ends codes -->
+    <!-- Bootstrap CSS v5.2.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+      <script src="./2.js"></script>
+</body>
+
+</html>
