@@ -251,34 +251,52 @@ let number1 = 44;
 
 // NORMAL FUNCTION
 // 1
-function returnsuzParametresiz() {
-    console.log("1-returnsuz Parametresiz")
-}
-returnsuzParametresiz();
+// function returnsuzParametresiz() {
+//     console.log("1-returnsuz Parametresiz")
+// }
+// returnsuzParametresiz();
 
+// // 2
+// function returnsuzParametreli(name) {
+//     console.log("2- returnsuz Parametreli " + name)
+// }
+// returnsuzParametreli("Hamit");
 
-// 2
-function returnsuzParametreli(name) {
-    console.log("2- returnsuz Parametreli " + name)
-}
-returnsuzParametreli("Hamit");
+// // 3
+// function returnluParametresiz() {
+//     return "3- returnlu Parametresiz";
+// }
+// let data3=returnluParametresiz();
+// console.log(data3);
 
-// 3
-function returnluParametresiz() {
-    return "3- returnlu Parametresiz";
-}
-let data3=returnluParametresiz();
-console.log(data3);
-
-// 4
-function returnluParametreli(name,surname) {
-    return "4- returnlu Parametreli "+String(name).toUpperCase()+" surname="+surname;
-}
-let data4=returnluParametreli("Hamit","Mızrak");
-console.log(data4);
+// // 4
+// function returnluParametreli(name,surname) {
+//     return "4- returnlu Parametreli "+String(name).toUpperCase()+" surname="+surname;
+// }
+// let data4=returnluParametreli("Hamit","Mızrak");
+// console.log(data4);
 
 ////////
 //normal, anonymous, arrowfunction, immediafunction
+
+// PARAMETRESIZ
+// NORMAL
+function normalFunction() {
+    console.log("Normal Function")
+}
+normalFunction()
+
+// ANONYMOUS (Dikkat: değişken fonksiyonu üzerinde çağıracağız)
+let anonymousFunction= function () {
+    console.log("Anonymous Function ")
+}
+anonymousFunction()
+
+// ARROW FUNCTION (Dikkat: değişken fonksiyonu üzerinde çağıracağız)
+let arrowFunction =  () => {
+    console.log("Arrow Function ")
+}
+arrowFunction()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // condititonal
