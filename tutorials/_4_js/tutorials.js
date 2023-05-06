@@ -173,40 +173,80 @@
 // GELECEK HAFTA
 // number 
 let number1=44;
-number1=44.23;
-console.log(number1);
-console.log(typeof  number1); // typeof
-console.log(4/"2");
-console.log(4/Number("2")); // cast: Dönüşüm
-console.log(4/0)
-//console.log(4/"asd")
-console.log(!isNaN(16)) // isNaN : it is Not a Number eğer false dönerse sayıdır.
-//console.log(Math.sqrt( Math.abs(Number(prompt("Lütfen bir sayı giriniz"))))); //Monad: bir verinin çıktısı başlasının girdisiyse
+// number1=44.23;
+// console.log(number1);
+// console.log(typeof  number1); // typeof
+// console.log(4/"2");
+// console.log(4/Number("2")); // cast: Dönüşüm
+// console.log(4/0)
+// //console.log(4/"asd")
+// console.log(isNaN(16)) // isNaN : it is Not a Number eğer false dönerse sayıdır.
+// //console.log(Math.sqrt( Math.abs(Number(prompt("Lütfen bir sayı giriniz"))))); //Monad: bir verinin çıktısı başlasının girdisiyse
 
-let bilimselGosterim=42000000;
-console.log(bilimselGosterim);
-let bilimselGosterim2=42E+6;
-console.log(bilimselGosterim2);
+// let bilimselGosterim=42000000;
+// console.log(bilimselGosterim);
+// let bilimselGosterim2=42E+6;
+// console.log(bilimselGosterim2);
 
-// Sayı sistemleri (Tabana Çevirme)
-// Binary(2) = 0 ve 1
-let binary2=0b011; // 2'lik tabanadan 10 tabana çevirme(Bilgisayar 2 tabanda çalışır)
-console.log(binary2);
+// // Sayı sistemleri (Tabana Çevirme)
+// // Binary(2) = 0 ve 1
+// let binary2=0b011; // 2'lik tabanadan 10 tabana çevirme(Bilgisayar 2 tabanda çalışır)
+// console.log(binary2);
 
-// Octal(8) = 0,1,2,3,4,5,6,7
-let octal8=0o712; // 8'lik tabanadan 10 tabana çevirme
-console.log(octal8);
+// // Octal(8) = 0,1,2,3,4,5,6,7
+// let octal8=0o712; // 8'lik tabanadan 10 tabana çevirme
+// console.log(octal8);
 
-// Decimal(10) = 0,1,2,3,4,5,6,7,8.9
-let decimal10=444; //Matematikte 10'luk tabana göre yazılır.(İnsanlar 2 tabanda çalışır)
-console.log(decimal10);
+// // Decimal(10) = 0,1,2,3,4,5,6,7,8.9
+// let decimal10=444; //Matematikte 10'luk tabana göre yazılır.(İnsanlar 2 tabanda çalışır)
+// console.log(decimal10);
 
-// Hexadecima(16) = 0,1,2,3,4,5,6,7,8.9
-let hexadecimal10=0x444; // 16'lik tabanadan 10 tabana çevirme
-console.log(hexadecimal10);
+// // Hexadecima(16) = 0,1,2,3,4,5,6,7,8.9,a,b,c,d,e,f
+// let hexadecimal10=0xa9f; // 16'lik tabanadan 10 tabana çevirme
+// console.log(hexadecimal10);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // string 
+let vocabulary="Javascript Öğreniyorum Javascript ";
+console.log(vocabulary);
+console.log(typeof vocabulary);
+console.log(typeof String(4));
+
+console.log(vocabulary.length);
+console.log(vocabulary.trim().length);
+console.log(vocabulary.toUpperCase());
+console.log(vocabulary.toLowerCase());
+console.log(vocabulary.charAt(0));
+console.log(vocabulary.indexOf("Javascript"));
+console.log(vocabulary.lastIndexOf("Javascript"));
+
+console.log(vocabulary.substring(11));
+console.log(vocabulary.substring(11).toUpperCase());
+console.log(vocabulary.substring(0,5));
+
+console.log(vocabulary.concat("sona ekler"));
+console.log(vocabulary.startsWith("Javascript"));
+console.log(vocabulary.endsWith(" "));
+console.log(vocabulary.replace(vocabulary,"değişti"));
+
+
+// ÖDEV NOT:5 adımı beraber yapalım
+// kullanıcı tarafından girilen bir kelimenin (prompt)
+// S-1) Kaç karakterlidir ? (length)
+// S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
+// S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
+// S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
+// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, indexOf,subString)
+// S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
+// S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
+// S-8) ilk harf nedir  ? (charAt())
+// S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
+// S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 // function (normal, anonymous, arrowfunction)
 // condititonal
 // Loop 
