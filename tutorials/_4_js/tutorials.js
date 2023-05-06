@@ -121,15 +121,15 @@
 
 ////////////////////////////////////////////////////////////////////
 // undefined
-let username;
-console.log(username);
+// let username;
+// console.log(username);
 
-// NaN
-console.log(4/4);
-console.log(4/"asd");
+// // NaN
+// console.log(4/4);
+// console.log(4/"asd");
 
-// infinity
-console.log(5/0);
+// // infinity
+// console.log(5/0);
 
 // new : doğmak
 // null: ölmek
@@ -137,26 +137,26 @@ console.log(5/0);
 // this: bu anlamaına objeyi işaretleme için kullanıyoruz.
 
 ////////////////////////////////////////////////////////////////////
-// Math
-console.log(Math.PI);
-console.log(Math.E);
+// // Math
+// console.log(Math.PI);
+// console.log(Math.E);
 
-console.log(Math.min(2,5,6,88,100,-500));
-console.log(Math.max(2,5,6,88,100,-500));
+// console.log(Math.min(2,5,6,88,100,-500));
+// console.log(Math.max(2,5,6,88,100,-500));
 
-console.log(Math.abs(-44));
-console.log(Math.sqrt( Math.abs(-25)));
+// console.log(Math.abs(-44));
+// console.log(Math.sqrt( Math.abs(-25)));
 
-console.log(Math.pow(2,5));
-console.log(Math.pow(2,Math.sqrt( Math.abs(-25))));
+// console.log(Math.pow(2,5));
+// console.log(Math.pow(2,Math.sqrt( Math.abs(-25))));
 
-console.log(Math.ceil(7.1));
-console.log(Math.floor(6.9));
-console.log(Math.round(3.4));
-console.log(Math.round(3.5));
+// console.log(Math.ceil(7.1));
+// console.log(Math.floor(6.9));
+// console.log(Math.round(3.4));
+// console.log(Math.round(3.5));
 
-//rastgele 
-console.log(Math.floor(Math.random()*9+1)); // 1<=X<=9
+// //rastgele 
+// console.log(Math.floor(Math.random()*9+1)); // 1<=X<=9
 
 
 //// MATH ÖDEVİ
@@ -172,6 +172,38 @@ console.log(Math.floor(Math.random()*9+1)); // 1<=X<=9
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // GELECEK HAFTA
 // number 
+let number1=44;
+number1=44.23;
+console.log(number1);
+console.log(typeof  number1); // typeof
+console.log(4/"2");
+console.log(4/Number("2")); // cast: Dönüşüm
+console.log(4/0)
+//console.log(4/"asd")
+console.log(!isNaN(16)) // isNaN : it is Not a Number eğer false dönerse sayıdır.
+//console.log(Math.sqrt( Math.abs(Number(prompt("Lütfen bir sayı giriniz"))))); //Monad: bir verinin çıktısı başlasının girdisiyse
+
+let bilimselGosterim=42000000;
+console.log(bilimselGosterim);
+let bilimselGosterim2=42E+6;
+console.log(bilimselGosterim2);
+
+// Sayı sistemleri (Tabana Çevirme)
+// Binary(2) = 0 ve 1
+let binary2=0b011; // 2'lik tabanadan 10 tabana çevirme(Bilgisayar 2 tabanda çalışır)
+console.log(binary2);
+
+// Octal(8) = 0,1,2,3,4,5,6,7
+let octal8=0o712; // 8'lik tabanadan 10 tabana çevirme
+console.log(octal8);
+
+// Decimal(10) = 0,1,2,3,4,5,6,7,8.9
+let decimal10=444; //Matematikte 10'luk tabana göre yazılır.(İnsanlar 2 tabanda çalışır)
+console.log(decimal10);
+
+// Hexadecima(16) = 0,1,2,3,4,5,6,7,8.9
+let hexadecimal10=0x444; // 16'lik tabanadan 10 tabana çevirme
+console.log(hexadecimal10);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // string 
