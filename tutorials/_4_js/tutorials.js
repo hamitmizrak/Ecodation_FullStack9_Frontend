@@ -335,77 +335,120 @@ let number1 = 44;
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-// condititonal
-// if else 
-let numberCon1 = 4;
-if (numberCon1 >= 10) {
-    console.log("10'dan büyüktür")
-} else {
-    console.log("10'dan küçüktür")
-}
-// ternary(kısayolu)
-let result = (numberCon1 >= 10) ? "10'dan büyüktür" : "10'dan küçüktür";
-console.log(result)
+// // condititonal
+// // if else 
+// let numberCon1 = 4;
+// if (numberCon1 >= 10) {
+//     console.log("10'dan büyüktür")
+// } else {
+//     console.log("10'dan küçüktür")
+// }
+// // ternary(kısayolu)
+// let result = (numberCon1 >= 10) ? "10'dan büyüktür" : "10'dan küçüktür";
+// console.log(result)
 
-// birden fazla karar
-let numberCon2 = 4;
-// 4 "4"
-if (numberCon2 == 1) { // 2 tane eşit olmasına bakılır. Türüne bakılmaz. number,string,boolean
-    console.log("1")
-    // 4 "4"
-} else if (numberCon2 === 2) { // 3 tane eşit olmasına bakılır. Türüne bakılır.
-    console.log("2")
-} else if (numberCon2 === 3) {
-    console.log("3")
-} else if (numberCon2 === 4) {
-    console.log("4")
-} else if (numberCon2 === 5) {
-    console.log("5")
-} else if (numberCon2 === 6) {
-    console.log("6")
-} else {
-    console.log("farklıdır")
-}
+// // birden fazla karar
+// let numberCon2 = 4;
+// // 4 "4"
+// if (numberCon2 == 1) { // 2 tane eşit olmasına bakılır. Türüne bakılmaz. number,string,boolean
+//     console.log("1")
+//     // 4 "4"
+// } else if (numberCon2 === 2) { // 3 tane eşit olmasına bakılır. Türüne bakılır.
+//     console.log("2")
+// } else if (numberCon2 === 3) {
+//     console.log("3")
+// } else if (numberCon2 === 4) {
+//     console.log("4")
+// } else if (numberCon2 === 5) {
+//     console.log("5")
+// } else if (numberCon2 === 6) {
+//     console.log("6")
+// } else {
+//     console.log("farklıdır")
+// }
 
-// Debug nasıl atılır
+//  Debug nasıl atılır (Hata ayıklama)
 //  switch case
-switch (numberCon2) {
-    case 1:
-        console.log("1")
-        break;
-    case 2:
-        console.log("2")
-        break;
-    case 3:
-        console.log("3")
-        break;
-    case 4:
-        console.log("4")
-        break;
-    case 5:
-        console.log("5")
-        break;
-    case 6:
-        console.log("6")
-        break;
-    default:
-        console.log("farklıdır")
-        break;
-}
+// switch (numberCon2) {
+//     case 1:
+//         console.log("1")
+//         break;
+//     case 2:
+//         console.log("2")
+//         break;
+//     case 3:
+//         console.log("3")
+//         break;
+//     case 4:
+//         console.log("4")
+//         break;
+//     case 5:
+//         console.log("5")
+//         break;
+//     case 6:
+//         console.log("6")
+//         break;
+//     default:
+//         console.log("farklıdır")
+//         break;
+// }
+
+// ÖDEV: 
+// Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
+// (Dikkat: normal function ile yazınız)
+// javascript ile negatif pozitif bulan algoritma ?
+
+// Kullanıcı tarafından girilen bir sayının tek mi, çift mi olduğunu yazan JS code yazınız.
+// (Dikkat:anonymous function ve ternary ile yazınız)
+
+// Şimdiki zamanın saatine göre hesaplama yapan switch-case ile  JS code yazınız.
+// (Dikkat: arrow function ile yazınız) Zaman için new Date().getHours() ile alabilirsiniz
+
+// Kullanıcıdan alınan sayıya göre Haftanın günlerini switch-case ile JS code yazınız?
+// Örneğin: kullanıcı 1 girdi: 1=pazartesi yazacak
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+// debug nasıl atılır?
+// Loop, for, while, do-while
+console.log(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10);
 
-// Loop
-// try catch ,exception handling
+//FOR  i++;  i+=1;  i=i+1;
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
+    sum += i;
+}
+console.log(sum);
+
+
+//WHILE  i++;  i+=1;  i=i+1;
+let sum2 = 0;
+let x=1;
+while (x <= 10) {
+    sum2 += x;
+    x++;
+}
+console.log(sum2)
+
+//DO-WHILE  i++;  i+=1;  i=i+1;
+let sum3 = 0;
+let y=1;
+do{
+    sum3 += y;
+    y++; 
+}while (y <= 10);
+console.log(sum3)
+
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // todo list html5/css3/RD/bootstrap
-// debug nasıl atılır?
+// try catch ,exception handling
 // senkron , asenkron nedir
 // monad nedir ?, function,
 // call back function,
 // promise function
 // async await function
 // dizi
+// Örnekler
+/////////////////////////////////////////////////////////////////////////////////////////////////
 // object
 // DOM
 // event
