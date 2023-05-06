@@ -410,33 +410,128 @@ let number1 = 44;
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // debug nasıl atılır?
 // Loop, for, while, do-while
-console.log(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10);
+// console.log(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10);
 
-//FOR  i++;  i+=1;  i=i+1;
-let sum = 0;
-for (let i = 1; i <= 10; i++) {
-    sum += i;
-}
-console.log(sum);
+// //FOR  i++;  i+=1;  i=i+1;
+// let sum = 0;
+// for (let i = 1; i <= 10; i++) {
+//     sum += i;
+// }
+// console.log(sum);
 
 
-//WHILE  i++;  i+=1;  i=i+1;
-let sum2 = 0;
-let x=1;
-while (x <= 10) {
-    sum2 += x;
-    x++;
-}
-console.log(sum2)
+// //WHILE  i++;  i+=1;  i=i+1;
+// let sum2 = 0;
+// let x=1;
+// while (x <= 10) {
+//     sum2 += x;
+//     x++;
+// }
+// console.log(sum2)
 
-//DO-WHILE  i++;  i+=1;  i=i+1;
-let sum3 = 0;
-let y=1;
-do{
-    sum3 += y;
-    y++; 
-}while (y <= 10);
-console.log(sum3)
+// //DO-WHILE  i++;  i+=1;  i=i+1;
+// let sum3 = 0;
+// let y=1;
+// do{
+//     sum3 += y;
+//     y++; 
+// }while (y <= 10);
+// console.log(sum3)
+
+// ÖDEV 
+//ÖDEV (if-else for break continue)
+//Fonksiyonlarla
+//Örnek: 1 ile kullanıcının vereceği (prompt) bitiş sayısına göre
+//kullancı: 5 verdi diyelim 1<=X<=5
+// 1.adım: kaç tane sayı var ?
+// 2.adım: sayı toplamları var ?
+// 3.adım: kaç tane tek  sayı var ?
+// 4.adım: tek sayılar toplamı ?
+// 5.adım: tek sayılar gösterelim ?
+// 6.adım: kaç tane çift  sayı var ?
+// 7.adım: çift sayılar toplamı ?
+// 8.adım: çift sayılar gösterelim ?
+// Eğer verilen sayılarda 7 sayısı varsa bunu eklemesin (continue)
+// Eğer bitiş sayısı 100 fazla ise 100'e kadar olanlar toplansın  (break)
+// Eğer kullanıcı başlangıç sayıdan küçük girerse uyaralım başlangıçtan büyük girmesini isteyelim
+// Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmayı direk durdursun
+
+let oddEven = () => {
+    let number = Number(prompt("Lütfen sayı giriniz"));
+    let counterNumber = 0, numberSum = 0;
+    let evenCounter = 0, evenSum = 0;
+    let oddCounter = 0, oddSum = 0;
+
+    for (let index = 0; index <= number; index++) {
+        if (index === 7) continue;
+        if (number >= 101)
+            break;
+
+        numberSum += index;
+        counterNumber++;
+        if (index % 2 == 0) {//ÇİFT
+            evenCounter++;
+            evenSum += index;
+        } else { //TEK
+            oddCounter++;
+            oddSum += index;
+        }
+    }
+    console.log("Toplam sayısı: " + counterNumber);
+    console.log("Çift sayısı: " + evenCounter);
+    console.log("Çift sayısı toplamı: " + evenSum);
+    console.log("Tek sayısı: " + oddCounter);
+    console.log("Tek sayısı toplamı: " + oddSum);
+} //end for
+
+
+
+oddEven()
+
+
+
+
+//NOT: örneklerimizi function,anonymous ve arrow function ile yapalım.
+//NOT: değişken olarak var,let,const kullanalım.
+//NOT: örneklerimizi function,anonymous ve arrow function ile yapalım.
+//NOT: değişken olarak var,let,const kullanalım.
+
+// ÖDEV
+// y=3x+4k ==>1.dereceden2bilinmeyenlidenklem algoritması
+// Kullanıcı tarafından alınan x ve kdeğerlerini hesaplayan algoritma yazınız ?
+
+// ÖDEV
+// Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
+// Formül: (derece*9/5)+32
+
+// ÖDEV operatör işlemleri: aşağıdaki örneği javascript ile yapalım
+// 4+3*2(3:3-1*6+9:1+(3:3))
+
+
+// ÖDEV: Aşağıdaki örnekleri math ile çözelim ?
+// -5.9 sayıyının aşağıdaki işlemleri yaptıralım ?
+// 1-mutlak değeri alsın 5.9
+// 2-yuvarlama yapsın  6.0
+// 3-karesini alsın 36.00
+// 4-karekök alsın 6.0
+// 5-yuvarlama yapsın 6.0
+// 6-)çıkan sonucu 5 bölsün 6/5=1
+// 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
+// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin
+// Örnek-5 : kullanıcı tarafından girilen bir sayıyı negatif mi pozitif mi olduğu ekran yazdıran algoritma ?
+// NOT: cast kullalım ?
+// Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
+// eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
+
+
+// ÖDEV
+// kullanıcıdan aldığımız isim soyisim (boşluk var)
+// ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
+// eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
+// Hamit Mızrak
+// H**** MIZ***
+// ipucu: charAt, substring, indexOf, döngü, karar mekanizma
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // todo list html5/css3/RD/bootstrap
