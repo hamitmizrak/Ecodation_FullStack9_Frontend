@@ -572,11 +572,18 @@ let arrayTutorials = () => {
     console.log(array);
 
     array.sort();
-    console.log(array);
+    console.log("SORT Küçükten Büyüğe  " + array);
+
+    array.reverse();
+    console.log("REVERSE " + array);
+
+    array.sort().reverse();
+    console.log("SORT.REVERSE  Büyükten Küçüğe   " + array);
 }
-arrayTutorials();
+//arrayTutorials();
 
 ////////////////////
+// dizi dönen fonksiyon
 let arrayDataSet = () => {
     let numberData = [];
     for (let i = 0; i <= 4; i++) {
@@ -620,13 +627,60 @@ let arrayTutorials2 = function () {
     // Escape Character (\)
     console.log("\n5-*************");
     // 5.YOL forEach => value, index, array
-    array.forEach((value, index, array)=> {
+    array.forEach((value, index, array) => {
         console.log(`${index} => ${value}`);
         //console.log(array);
     });
- 
+
 }
-arrayTutorials2();
+//arrayTutorials2();
+
+/////// 
+let arrayTutorials3 = function () {
+    let array = arrayDataSet();
+    array.sort();
+
+    // toString(dizi=> string'e çevirmek)
+    // toString(): string;
+    let result1 = array.toString().substring(0, 4);
+    console.log(result1);
+
+    // join(birleştirmek): diziyi => String'e çeviriyor 
+    // ancak sonuna istediğimiz bir simge varsa ekliyor
+    // join(separator?: string): string;
+    let result2 =array.join(" "); //array.join("*");
+    console.log(result2);
+
+    // split(ayırmak)
+    
+    // slice(dilim)
+    // slice(start?:number, end?:number): T[];)
+    let result3= array.slice(2); // 2.indisten itibaren kopyala dizi dönderdi
+    console.log(result3);
+
+    let result4= array.slice(0,2); // 0<=X<2 aradaki değerleri kopyaladı dizi dönderdi
+    console.log(result4);
+
+    //splice(ekleme)
+
+}
+arrayTutorials3()
+
+/////// 
+let arrayTutorials4 = function () {
+    let array = arrayDataSet();
+
+    //forEach
+
+    //filter
+
+    //map
+
+    //fill(dilim)
+
+
+}
+//arrayTutorials4()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // senkron , asenkron nedir
