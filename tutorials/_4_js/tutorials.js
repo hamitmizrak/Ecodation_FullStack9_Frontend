@@ -605,14 +605,23 @@ let arrayTutorials2 = function () {
         console.log(temp);
     }
 
-    // Escape Character (\)
-    console.log("\n4-*************");
-    // 4.YOL forEach
-    // value, index, array
+    // Anonymous Function (ForEach)
+    console.log("4-*************");
+    // 4.YOL forEach => value, index, array
     array.forEach(function (value, index, array) {
         console.log(`${index} => ${value}`);
-        console.log(array);
+        //console.log(array);
     });
+
+    // Arrow Function (ForEach)
+    // Escape Character (\)
+    console.log("\n5-*************");
+    // 5.YOL forEach => value, index, array
+    array.forEach((value, index, array)=> {
+        console.log(`${index} => ${value}`);
+        //console.log(array);
+    });
+ 
 }
 arrayTutorials2();
 
