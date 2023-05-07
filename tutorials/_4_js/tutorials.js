@@ -522,23 +522,34 @@ let oddEven = () => {
 // debug nasıl atılır ?
 // try catch (Exception Handling)
 
-let tryCatchTutorials=()=>{
+let tryCatchTutorials = () => {
     // Global variable (var)
     // Local variable (let-const)
     try {
-        var number=  Number(prompt("Lütfen bir sayı giriniz")); //syntax error
-        number=number**2;// Math.pow(number,2)
+        var number = Number(prompt("Lütfen bir sayı giriniz")); //syntax error
+        number = number ** 2;// Math.pow(number,2)
         window.alertx(number);
-        console.log("Çalışmayacak alan "+number);
+        console.log("Çalışmayacak alan " + number);
         console.log("Mecburi çalışacak alan-1");
     } catch (error) {
-        console.error("Hata mesajı-1: "+error.name);   // Type veriyor
-        console.error("Hata mesajı-2: "+error.message);// type vermiyor hata mesajını veriyor
-        console.error("Hata mesajı-3: "+error);
-    } finally{
+        console.error("Hata mesajı-1: " + error.name);   // Type veriyor
+        console.error("Hata mesajı-2: " + error.message);// type vermiyor hata mesajını veriyor
+        console.error("Hata mesajı-3: " + error);
+    } finally {
         console.info("Mecburi çalışacak alan-2");
     }
-console.log("Çalışacak alan "+number);
+    console.log("Çalışacak alan " + number);
+
+    let passwd = Number(prompt("Lütfen şifrenizi giriniz"));
+    if (passwd !== 4444) {
+        // bazen zorlayarak sisteme hata oluşmasını isteriz
+        throw "401 unAuthorized (Yetkisiz Giriş)"
+    } else {
+        alert("Admin Girişi")
+    }
+
+
+
 }
 tryCatchTutorials()
 
@@ -572,13 +583,13 @@ tryCatchTutorials()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // ARA TATİL
-// PROJECT-3 ==> TODO LIST 
+// PROJECT-3 ==> TODO LIST
 // Todo-List html5/css3/RD/bootstrap
 // Todo-List html5/css3/RD/bootstrap/JS/jQuery
 // Todo-List html5/css3/RD/bootstrap/JS/jQuery/jquery POST
 // Todo-List html5/css3/RD/bootstrap/JS/jQuery/ Java, springDATA, springAPI
 
-// +ES5, ES6 nedir örnekler üzerinde çalışacak 
+// +ES5, ES6 nedir örnekler üzerinde çalışacak
 // araştırma ödevleri ?
 // Senkron ile asenkron arasındaki farklar nelerdir ?
 // Libraries ile Framework arasındaki farklar nelerdir ?
@@ -595,13 +606,13 @@ tryCatchTutorials()
 // interprete nedir ?
 // compiler nedir ?
 
-// JDK nedir 
-// JRE nedir 
+// JDK nedir
+// JRE nedir
 // JVM nedir
-// JIT nedir 
+// JIT nedir
 // Decoder / Encoder nedir
-// Java özellikleri nelerdir 
-// SQL nedir 
+// Java özellikleri nelerdir
+// SQL nedir
 
 // GİT / Linux codes ?
 // sıfırdan bir bir UI pojesi yapacağız. Web site Frontend?
