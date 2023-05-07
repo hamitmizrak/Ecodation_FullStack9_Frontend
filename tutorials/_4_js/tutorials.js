@@ -550,6 +550,67 @@ let tryCatchTutorials = () => {
 }
 //tryCatchTutorials()
 /////////////////////////////////////////////////////////////////////////////////////////////////
+// dizi
+let arrayTutorials = () => {
+    let array = [44, 33, 11, 22, true, "array", 44.23];
+    console.log(array);
+    console.log(typeof array);
+    console.log(array[0]);
+    console.log(array[3]);
+    console.log(array[array.length - 1]);
+
+    array.push(66);
+    console.log(array);
+
+    array.unshift(99);
+    console.log(array);
+
+    array.pop();
+    console.log(array);
+
+    array.shift();
+    console.log(array);
+}
+//arrayTutorials();
+
+////////////////////
+let arrayDataSet = () => {
+    let numberData = [];
+    for (let i = 0; i <= 4; i++) {
+        numberData[i] = Math.floor(Math.random() * 9 + 1);
+    }
+    return numberData;
+}
+
+let arrayTutorials2 = function () {
+    //console.log(arrayDataSet());
+    let array = arrayDataSet();
+
+    // 1.YOL iterative for
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+    console.log("*************");
+
+    // 2.YOL  for in
+    for (let temp in array) {
+        console.log(temp+" => "+array[temp]);
+        console.log(`${temp} => ${array[temp]}`);
+    }
+
+    // Escape Character (\)
+    console.log("\n*************");
+
+    // 3.YOL  for of
+    for (let temp of array) {
+        console.log(temp);
+    }
+
+    // 4.YOL
+}
+arrayTutorials2();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
 // senkron , asenkron nedir
 // monad nedir ?, function,
 // call back function
@@ -568,6 +629,11 @@ let ikinci = () => {
 //ikinci();
 
 // CALLBACK FUNCTION (Hell)
+// CallBack Güvenmiyoruz Neden ?
+// 1-) Beklediğimiz zamandan erken gelebilir. Sonuç doğru olmaz o zaman
+// 2-) Parametreleri gönderemeyebilir.
+// 3-) Sebebsiz dallanmalar olabilir.
+// Sadece bu sebeblerde bile olsa Promise veya Async/Await kullanmalıyız.
 let ucuncu = (number) => {
     number = number ** 2;// Math.pow(number,2)
     return number;
@@ -579,12 +645,11 @@ let dorduncu = (callBackFunction) => {
     let result = callBackFunction(number)
     console.log(result);
 }
-dorduncu(ucuncu)
+//dorduncu(ucuncu)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // promise function
 // async await function
-// dizi
 // Örnekler
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // object
@@ -603,7 +668,7 @@ dorduncu(ucuncu)
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
 // PROJECT-1 ==> KDV Hesaplama html5/css3/RD/bootstrap/jQuery
-// PROJECT-1 ==> jQuery Java Post
+// PROJECT-2 ==> jQuery Java Post
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // ARA TATİL
