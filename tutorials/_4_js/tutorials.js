@@ -640,17 +640,20 @@ let arrayTutorials3 = function () {
     let array = arrayDataSet();
     array.sort();
 
+    console.log("*** toString => string çevir ***")
     // toString(dizi=> string'e çevirmek)
     // toString(): string;
     let result1 = array.toString().substring(0, 4);
     console.log(result1);
 
+    console.log("*** join => string'e çevir ***")
     // join(birleştirmek): diziyi => String'e çeviriyor 
     // ancak sonuna istediğimiz bir simge varsa ekliyor
     // join(separator?: string): string;
     let result2 = array.join(" "); //array.join("*");
     console.log(result2);
 
+    console.log("*** split => string'i boşluktan arındır ***")
     // split(ayırmak): Dikkat (string olan verilerde kullanıyoruz). 
     // split(separator?: string): string[];
     let kelime = "merhabalar nasıl gidiyor";
@@ -664,6 +667,7 @@ let arrayTutorials3 = function () {
     let result5 = array.toString().split(" ");
     console.log(result5);
 
+    console.log("*** slice: ekle ***")
     // slice(dilim)
     // slice(start?:number, end?:number): T[];)
     let result6 = array.slice(2); // 2.indisten itibaren kopyala dizi dönderdi
@@ -673,30 +677,70 @@ let arrayTutorials3 = function () {
     // 2:bitiş
     let result7 = array.slice(0, 2); // 0<=X<2 aradaki değerleri kopyaladı dizi dönderdi
     console.log(result7);
-
-    //splice(ekleme)
-    let result8 = array.splice(0,2)
-    console.log(result8);
-
-    let result9 = array.splice(2,1)
-    console.log(result9);
 }
-arrayTutorials3()
+//arrayTutorials3()
 
-/////// 
 let arrayTutorials4 = function () {
     let array = arrayDataSet();
+    console.log(array);
+    // NOT: splice diziyi etkiler yeni değerler üzerinden çalışma yapar.
+    console.log("*** Splice: ekleme ve silme ***")
+    // başlama:1 (dahil)
+    // sil:2
+    let result1 = array.splice(1, 2)
+    console.log(array);
 
-    //forEach
+    // başlama:2 (dahil)
+    // sil:0 (silmiyoruz)
+    // ekle
+    let result2 = array.splice(2, 0, "yeni")
+    console.log(array);
 
-    //filter
-
-    //map
-
-    //fill(dilim)
-
+    let result3 = array.splice(0, 2, "yeni44")
+    console.log(array);
 }
 //arrayTutorials4()
+
+/////// 
+let arrayTutorials5 = function () {
+    let array = arrayDataSet();
+
+    // forEach(döngü)
+    // forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
+    console.log("*** ForEach *****");
+    let donguData = array.forEach((value, index, array) => {
+        console.log(`${index} => ${value}`);
+    });
+
+
+    // filter ( filtreleme )
+    // filter(predicate: (value: T, index: number, array: T[]) => unknown, thisArg?: any): T[];
+    console.log("*** Filter *****");
+    let filterData =
+        array.filter((value, index, array) => {
+            //console.log(`${index} => ${value}`);
+            return value % 2 == 0
+        }).forEach((value, index, array) => {
+            console.log(`${index} => ${value}`);
+        });
+
+    // map(eşleme)
+    // map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[];
+    console.log("*** Filter *****");
+    let eslemeData = array.map((value, index, array) => {
+        return Math.pow(value, 2);
+    }).forEach((value, index, array) => {
+        console.log(`${index} => ${value}`);
+    });
+
+    // fill(dilim)
+    // fill(value: T, start?: number, end?: number): this;
+    console.log("*** Fill *****");
+    let doldurData= array.fill(3);
+    console.log(doldurData)
+
+}
+arrayTutorials5()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // senkron , asenkron nedir
@@ -756,7 +800,7 @@ let dorduncu = (callBackFunction) => {
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
 // PROJECT-1 ==> KDV Hesaplama html5/css3/RD/bootstrap/jQuery
-// PROJECT-2 ==> jQuery Java Post
+// PROJECT-2 ==> jQuery Java Post.
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // ARA TATİL
