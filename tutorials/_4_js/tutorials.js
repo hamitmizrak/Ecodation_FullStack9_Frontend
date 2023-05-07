@@ -648,21 +648,38 @@ let arrayTutorials3 = function () {
     // join(birleştirmek): diziyi => String'e çeviriyor 
     // ancak sonuna istediğimiz bir simge varsa ekliyor
     // join(separator?: string): string;
-    let result2 =array.join(" "); //array.join("*");
+    let result2 = array.join(" "); //array.join("*");
     console.log(result2);
 
-    // split(ayırmak)
-    
-    // slice(dilim)
-    // slice(start?:number, end?:number): T[];)
-    let result3= array.slice(2); // 2.indisten itibaren kopyala dizi dönderdi
-    console.log(result3);
-
-    let result4= array.slice(0,2); // 0<=X<2 aradaki değerleri kopyaladı dizi dönderdi
+    // split(ayırmak): Dikkat (string olan verilerde kullanıyoruz). 
+    // split(separator?: string): string[];
+    let kelime = "merhabalar nasıl gidiyor";
+    let result4 = kelime.split(" ");
     console.log(result4);
 
-    //splice(ekleme)
+    // "merhabalar nasıl gidiyor" bu String yapıyı boşluklardan arındırarark 
+    // her bir elemanı dizi elemanı yapın
+    // öncelikle String'i boşluklardan arındırın. 
+    // buradaki her bir eleman dizi olarak atayın.
+    let result5 = array.toString().split(" ");
+    console.log(result5);
 
+    // slice(dilim)
+    // slice(start?:number, end?:number): T[];)
+    let result6 = array.slice(2); // 2.indisten itibaren kopyala dizi dönderdi
+    console.log(result6);
+
+    // 0: başlama
+    // 2:bitiş
+    let result7 = array.slice(0, 2); // 0<=X<2 aradaki değerleri kopyaladı dizi dönderdi
+    console.log(result7);
+
+    //splice(ekleme)
+    let result8 = array.splice(0,2)
+    console.log(result8);
+
+    let result9 = array.splice(2,1)
+    console.log(result9);
 }
 arrayTutorials3()
 
@@ -677,7 +694,6 @@ let arrayTutorials4 = function () {
     //map
 
     //fill(dilim)
-
 
 }
 //arrayTutorials4()
