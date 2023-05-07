@@ -586,27 +586,33 @@ let arrayTutorials2 = function () {
     //console.log(arrayDataSet());
     let array = arrayDataSet();
 
+    console.log("1-*************");
     // 1.YOL iterative for
     for (let i = 0; i < array.length; i++) {
         console.log(array[i]);
     }
-    console.log("*************");
 
+    console.log("2-*************");
     // 2.YOL  for in
     for (let temp in array) {
-        console.log(temp+" => "+array[temp]);
+        console.log(temp + " => " + array[temp]);
         console.log(`${temp} => ${array[temp]}`);
     }
 
-    // Escape Character (\)
-    console.log("\n*************");
-
+    console.log("3-*************");
     // 3.YOL  for of
     for (let temp of array) {
         console.log(temp);
     }
 
-    // 4.YOL
+    // Escape Character (\)
+    console.log("\n4-*************");
+    // 4.YOL forEach
+    // value, index, array
+    array.forEach(function (value, index, array) {
+        console.log(`${index} => ${value}`);
+        console.log(array);
+    });
 }
 arrayTutorials2();
 
