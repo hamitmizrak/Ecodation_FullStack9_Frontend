@@ -483,12 +483,7 @@ let oddEven = () => {
     console.log("Tek sayısı: " + oddCounter);
     console.log("Tek sayısı toplamı: " + oddSum);
 } //end for
-
-
-
-oddEven()
-
-
+//oddEven()
 
 
 //NOT: örneklerimizi function,anonymous ve arrow function ile yapalım.
@@ -523,19 +518,32 @@ oddEven()
 // Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
 // eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// debug nasıl atılır ?
+// try catch (Exception Handling)
 
-// ÖDEV
-// kullanıcıdan aldığımız isim soyisim (boşluk var)
-// ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
-// eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
-// Hamit Mızrak
-// H**** MIZ***
-// ipucu: charAt, substring, indexOf, döngü, karar mekanizma
+let tryCatchTutorials=()=>{
+    // Global variable (var)
+    // Local variable (let-const)
+    try {
+        var number=  Number(prompt("Lütfen bir sayı giriniz")); //syntax error
+        number=number**2;// Math.pow(number,2)
+        window.alertx(number);
+        console.log("Çalışmayacak alan "+number);
+        console.log("Mecburi çalışacak alan-1");
+    } catch (error) {
+        console.error("Hata mesajı-1: "+error.name);   // Type veriyor
+        console.error("Hata mesajı-2: "+error.message);// type vermiyor hata mesajını veriyor
+        console.error("Hata mesajı-3: "+error);
+    } finally{
+        console.info("Mecburi çalışacak alan-2");
+    }
+console.log("Çalışacak alan "+number);
+}
+tryCatchTutorials()
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-// todo list html5/css3/RD/bootstrap
-// try catch ,exception handling
 // senkron , asenkron nedir
 // monad nedir ?, function,
 // call back function,
@@ -550,11 +558,27 @@ oddEven()
 // listener
 // local storage
 // jquery nedir ?
-// todo list html5/css3/RD/bootstrap/JS/jQuery
-// todo list html5/css3/RD/bootstrap/JS/jQuery/jquery POST
-// todo list html5/css3/RD/bootstrap/JS/jQuery/ Java, springDATA, springAPI
-// +ES5
 
+// ÖDEV
+// kullanıcıdan aldığımız isim soyisim (boşluk var)
+// ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
+// eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
+// Hamit Mızrak
+// H**** MIZ***
+// ipucu: charAt, substring, indexOf, döngü, karar mekanizma
+
+// PROJECT-1 ==> KDV Hesaplama html5/css3/RD/bootstrap/jQuery
+// PROJECT-1 ==> jQuery Java Post
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// ARA TATİL
+// PROJECT-3 ==> TODO LIST 
+// Todo-List html5/css3/RD/bootstrap
+// Todo-List html5/css3/RD/bootstrap/JS/jQuery
+// Todo-List html5/css3/RD/bootstrap/JS/jQuery/jquery POST
+// Todo-List html5/css3/RD/bootstrap/JS/jQuery/ Java, springDATA, springAPI
+
+// +ES5, ES6 nedir örnekler üzerinde çalışacak 
 // araştırma ödevleri ?
 // Senkron ile asenkron arasındaki farklar nelerdir ?
 // Libraries ile Framework arasındaki farklar nelerdir ?
@@ -568,9 +592,21 @@ oddEven()
 // api nedir ?
 // ajax nedir ?
 // jquery post ?
+// interprete nedir ?
+// compiler nedir ?
+
+// JDK nedir 
+// JRE nedir 
+// JVM nedir
+// JIT nedir 
+// Decoder / Encoder nedir
+// Java özellikleri nelerdir 
+// SQL nedir 
 
 // GİT / Linux codes ?
 // sıfırdan bir bir UI pojesi yapacağız. Web site Frontend?
 
 // 1.HAFTA Çalışma ara tatili ?
+
+// Blog html5/css3/RD/bootstrap Java-Spring  Projemizde Backend/(Frontend) Blog/React
 
