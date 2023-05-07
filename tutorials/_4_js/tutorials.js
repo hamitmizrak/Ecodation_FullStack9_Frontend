@@ -570,8 +570,11 @@ let arrayTutorials = () => {
 
     array.shift();
     console.log(array);
+
+    array.sort();
+    console.log(array);
 }
-//arrayTutorials();
+arrayTutorials();
 
 ////////////////////
 let arrayDataSet = () => {
