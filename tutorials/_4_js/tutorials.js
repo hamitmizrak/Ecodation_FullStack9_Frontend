@@ -521,7 +521,6 @@ let oddEven = () => {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // debug nasıl atılır ?
 // try catch (Exception Handling)
-
 let tryCatchTutorials = () => {
     // Global variable (var)
     // Local variable (let-const)
@@ -540,24 +539,49 @@ let tryCatchTutorials = () => {
     }
     console.log("Çalışacak alan " + number);
 
+    // throw Kullanımı: 
+    // bazen zorlayarak sisteme hata oluşmasını isteriz
     let passwd = Number(prompt("Lütfen şifrenizi giriniz"));
     if (passwd !== 4444) {
-        // bazen zorlayarak sisteme hata oluşmasını isteriz
         throw "401 unAuthorized (Yetkisiz Giriş)"
     } else {
         alert("Admin Girişi")
     }
-
-
-
 }
-tryCatchTutorials()
-
-
+//tryCatchTutorials()
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // senkron , asenkron nedir
 // monad nedir ?, function,
-// call back function,
+// call back function
+
+// MONAD FUNCTION
+let birinci = (number) => {
+    number = number ** 2;// Math.pow(number,2)
+    return number;
+}
+
+let ikinci = () => {
+    let number = Number(prompt("Lütfen bir sayı giriniz")); //syntax error
+    let result = birinci(number)
+    console.log(result);
+}
+//ikinci();
+
+// CALLBACK FUNCTION (Hell)
+let ucuncu = (number) => {
+    number = number ** 2;// Math.pow(number,2)
+    return number;
+}
+
+let dorduncu = (callBackFunction) => {
+    let number = Number(prompt("Lütfen bir sayı giriniz")); //syntax error
+    // diğer fonksiyonun adını bilmeyebilirim. bundan dolayı = callBackFunction yazdım 
+    let result = callBackFunction(number)
+    console.log(result);
+}
+dorduncu(ucuncu)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
 // promise function
 // async await function
 // dizi
@@ -603,9 +627,16 @@ tryCatchTutorials()
 // api nedir ?
 // ajax nedir ?
 // jquery post ?
-// interprete nedir ?
-// compiler nedir ?
 
+// interpreter nedir ?
+// compiler nedir ?
+// DRY nedir ?
+// KISS nedir
+// YAGNI nedir
+// Dummy Code  nedir
+// Clean Code nedir
+// Monad nedir
+// SOLID
 // JDK nedir
 // JRE nedir
 // JVM nedir
