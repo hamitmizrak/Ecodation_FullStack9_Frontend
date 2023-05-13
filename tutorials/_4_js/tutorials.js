@@ -785,6 +785,7 @@ let dorduncu = (callBackFunction) => {
 //dorduncu(ucuncu)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+// setInterval: fonkiyonunun çalışmasını bekliyor.
 // setInterval => 1.YOL
 let customer1=()=>{
     //setInterval(callbackfnc(),ms)
