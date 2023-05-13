@@ -785,6 +785,7 @@ let dorduncu = (callBackFunction) => {
 //dorduncu(ucuncu)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+// setInterval => 1.YOL
 let customer1=()=>{
     //setInterval(callbackfnc(),ms)
     setInterval(function (){
@@ -793,10 +794,21 @@ let customer1=()=>{
 }
 let customer2=()=>{alert("2.müşteri");}
 
-customer1()
-customer2()
+//customer1()
+//customer2()
 
+///////////////////////////////// 
+// setInterval => 2.YOL
+let customer3=()=>{
+    //setInterval(callbackfnc(),ms)
+    setInterval(()=>{
+        alert("3.müşteri");
+    },3000);
+}
+let customer4=()=>{alert("4.müşteri");}
 
+customer3()
+customer4()
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
