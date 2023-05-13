@@ -906,7 +906,7 @@ let asynAwaitfnc1 = async () => {
 
         // 2.YOL
         // Ternary
-         const result1 = await (status === 200) ? "EVET" : "HAYIR";
+        const result1 = await (status === 200) ? "EVET" : "HAYIR";
 
         // 3.YOL
         // ternary alternative: 200 eşitse true değilse false
@@ -921,72 +921,92 @@ let asynAwaitfnc1 = async () => {
 // Örnekler
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // object
-let obj1={};
-let arr=[];
+let obj1 = {};
+let arr = [];
 // console.log(arr);
 // console.log(typeof arr);
 // console.log(obj1);
 // console.log(typeof obj1);
 ///////////arr
-let person1={
-    "name":"Öğrenci adı",
-    "surname":"Öğrenci soyadı",
-    "isLogin":true,
-    number:25,
-    "data1":function(number){
-        console.log(`data:${Math.sqrt(number)}`);
-        return `data1: ${Math.sqrt(number)}`;
-    },
-    "data2":function(){
-        // obje içide veri kullanmak istiyorsan objeyi işaretlemen gerekiyor
-        return `data2: ${Math.sqrt(this.number)}`;
-    },
-    "java":{
-        "techName":"JavaSe",
-        "year":"25"
-    }
-};
-console.log(person1);
-console.log(person1.name.toUpperCase());
-console.log(person1.isLogin&&"sign");
-console.log(person1.java.techName);
-console.log(person1.data1(16));
-console.log(person1.data2());
-console.log("***************");
+// let person1={
+//     "name":"Öğrenci adı",
+//     "surname":"Öğrenci soyadı",
+//     "isLogin":true,
+//     number:25,
+//     "data1":function(number){
+//         console.log(`data:${Math.sqrt(number)}`);
+//         return `data1: ${Math.sqrt(number)}`;
+//     },
+//     "data2":function(){
+//         // obje içide veri kullanmak istiyorsan objeyi işaretlemen gerekiyor
+//         return `data2: ${Math.sqrt(this.number)}`;
+//     },
+//     "java":{
+//         "techName":"JavaSe",
+//         "year":"25"
+//     }
+// };
+// console.log(person1);
+// console.log(person1.name.toUpperCase());
+// console.log(person1.isLogin&&"sign");
+// console.log(person1.java.techName);
+// console.log(person1.data1(16));
+// console.log(person1.data2());
+// console.log("***************");
 
-// Obje verileri ekrandan yazdırmak
-for( let key in person1 ){
-document.write(`${key} =>${person1[key]}  <br/>`)
-}
-console.log("***************");
+// // Obje verileri ekrandan yazdırmak
+// for( let key in person1 ){
+// document.write(`${key} =>${person1[key]}  <br/>`)
+// }
+// console.log("***************");
 
-// Obje literal: objede daha sonra eklenencek özellikleri göstermek
-person1.schoolName="Anadolu";
-console.log(person1.schoolName);
-document.write(`${person1.schoolName} <br/>`)
-console.log("***************");
+// // Obje literal: objede daha sonra eklenencek özellikleri göstermek
+// person1.schoolName="Anadolu";
+// console.log(person1.schoolName);
+// document.write(`${person1.schoolName} <br/>`)
+// console.log("***************");
 
-// object nested naming
-console.log(person1);
-console.log(person1.name);
-console.log(person1["name"]);
-console.log(person1.java.techName);
-console.log(person1["java"]["techName"]);
-console.log("***************");
+// // object nested naming
+// console.log(person1);
+// console.log(person1.name);
+// console.log(person1["name"]);
+// console.log(person1.java.techName);
+// console.log(person1["java"]["techName"]);
+// console.log("***************");
 
 // object constructor
 // objede this ile attributelara erişiyoruz.
-let person2=function(name,surname){
-    this.name=name;
-    this.surname=surname;
+let person2 = function (name, surname) {
+    this.name = name;
+    this.surname = surname;
     console.log(this);
 }
 
 // hatırlatma: new hafıza yer açmak için kullanıyoruz.
-// new Promise()  ve object constructure
-let result2= new person2("ADI44","SOYADI44");
+// new Promise()  ve object constructur
+let result2 = new person2("ADI44", "SOYADI44");
+console.log("***************");
 
+// hasOwnProperty: objedeki Key(attributes) emin olmak için
+console.log("result2 objesinde böyle bir attribute var mı ?" + result2.hasOwnProperty("name"));
+console.log("***************");
 
+// built-in-constructor: sisteme kendi yazdığımız fonksiyonu ekleme
+// sayının küpü alan built-in-constructor
+//String.prototype.hamitMizrakCupe
+let hamitMizrakCupe = (number) => {
+    const temp= Number(Math.pow(number, 3));
+    alert(temp);
+    return temp;
+}
+console.log(hamitMizrakCupe(3));
+
+String.prototype.hamitMizrakCupe=(number) => {
+    const temp= Number(Math.pow(number, 3));
+    alert(temp);
+    return temp;
+}
+let studentValue = "".hamitMizrakCupe(4);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // DOM
