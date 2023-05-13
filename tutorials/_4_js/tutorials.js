@@ -1020,6 +1020,10 @@ let onClickDeneme = () => {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 // listener
+//addEventListener(event,callbackfnc);
+let listenerData=document.getElementById('param1');
+listenerData.addEventListener("click",function(e){alert("Tıklandı "+e.preventDefault)});
+// preventDefault: Browsera diyor ki sen bir şey yapma.
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
