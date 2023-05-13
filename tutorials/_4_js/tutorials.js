@@ -932,10 +932,14 @@ let person1={
     "name":"Öğrenci adı",
     "surname":"Öğrenci soyadı",
     "isLogin":true,
-    "number":12345621,
-    "data":function(number){
+    number:25,
+    "data1":function(number){
         console.log(`data:${Math.sqrt(number)}`);
-        return `data:${Math.sqrt(number)}`;
+        return `data1: ${Math.sqrt(number)}`;
+    },
+    "data2":function(){
+        // obje içide veri kullanmak istiyorsan objeyi işaretlemen gerekiyor
+        return `data2: ${Math.sqrt(this.number)}`;
     },
     "java":{
         "techName":"JavaSe",
@@ -946,7 +950,8 @@ console.log(person1);
 console.log(person1.name.toUpperCase());
 console.log(person1.isLogin&&"sign");
 console.log(person1.java.techName);
-console.log(person1.data(16));
+console.log(person1.data1(16));
+console.log(person1.data2());
 console.log("***************");
 
 // Obje verileri ekrandan yazdırmak
