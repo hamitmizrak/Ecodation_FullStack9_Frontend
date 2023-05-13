@@ -916,16 +916,68 @@ let asynAwaitfnc1 = async () => {
         console.err(error)
     }
 };
-asynAwaitfnc1();
+//asynAwaitfnc1();
 
 // Örnekler
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // object
+let obj1={};
+let arr=[];
+// console.log(arr);
+// console.log(typeof arr);
+// console.log(obj1);
+// console.log(typeof obj1);
+///////////arr
+let person1={
+    "name":"Öğrenci adı",
+    "surname":"Öğrenci soyadı",
+    "isLogin":true,
+    "number":12345621,
+    "data":function(number){
+        console.log(`data:${Math.sqrt(number)}`);
+        return `data:${Math.sqrt(number)}`;
+    },
+    "java":{
+        "techName":"JavaSe",
+        "year":"25"
+    }
+};
+console.log(person1);
+console.log(person1.name.toUpperCase());
+console.log(person1.isLogin&&"sign");
+console.log(person1.java.techName);
+console.log(person1.data(16));
+console.log("***************");
+
+// Obje verileri ekrandan yazdırmak
+for( let key in person1 ){
+document.write(`${key} =>${person1[key]}  <br/>`)
+}
+console.log("***************");
+
+// Obje literal: objede daha sonra eklenencek özellikleri göstermek
+person1.schoolName="Anadolu";
+console.log(person1.schoolName);
+document.write(`${person1.schoolName} <br/>`)
+console.log("***************");
+
+// object nested naming
+console.log(person1);
+console.log(person1.name);
+console.log(person1["name"]);
+console.log(person1.java.techName);
+console.log(person1["java"]["techName"]);
+console.log("***************");
+
+// object constructor
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
 // DOM
 // event
 // listener
 // local storage
 // jquery nedir ?
+// Git / Linux Codes
 
 // ÖDEV
 // kullanıcıdan aldığımız isim soyisim (boşluk var)
