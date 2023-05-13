@@ -808,8 +808,8 @@ let customer3=()=>{
 }
 let customer4=()=>{alert("4.müşteri");}
 
-customer3()
-customer4()
+//customer3()
+//customer4()
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -824,14 +824,50 @@ let data2=(callbackfnc)=>{
     let number = Number(prompt("Lütfen bir sayı giriniz")); 
     callbackfnc(number)
 }
-
+// Dikkat: Functionda kullandığımız parantezi kullanmıyoruz. () 
 //data2(data1);
 
 
-
 // 2-) Promise 
-// Kullanıcıdan alınan sayıyı mutlak değere çeviren aalgoritma ?
+// Kullanıcıdan alınan sayıyı mutlak değere çeviren algoritma ?
+// resolved: olumlu sonuçlanmış
+// rejected: olumsuz sonuçlanmış
+// pending: bekleme
 
+// 1.Gösterim Promise 
+let promisefnc=new Promise((resolve,reject)=>{
+    // JS senkron çalışır.
+    // promise: ya resolve döner yada reject
+    resolve("olumlu sonuçlandı");
+    //reject("olumsuz sonuçlandı")
+});
+console.log(promisefnc)
+
+// 1.Gösterim Promise 
+let promisefnc2=new Promise((resolve,reject)=>{
+    // JS senkron çalışır.
+    // promise: ya resolve döner yada reject
+    resolve("olumlu sonuçlandı");
+    //reject("olumsuz sonuçlandı")
+}).then().then().then(()=>{}).catch(()=>{});
+console.log(promisefnc2)
+
+
+// then:  eğer promise'dan bir sonuç dönerse çalışır
+// catch: eğer promise'dan bir sonuç dönmezse çalışır. 
+promisefnc2.then().catch();
+
+// catch: (Dikkat: 1 tane catch vardır)
+promisefnc2.then().then().then().catch();
+
+
+promisefnc2.then(()=>{
+
+}).catch((error)=>{
+    console.log(error);
+    console.log(error.name);
+    console.log(error.message);
+});
 
 // promise function
 // async await function
