@@ -970,6 +970,18 @@ console.log(person1["java"]["techName"]);
 console.log("***************");
 
 // object constructor
+// objede this ile attributelara erişiyoruz.
+let person2=function(name,surname){
+    this.name=name;
+    this.surname=surname;
+    console.log(this);
+}
+
+// hatırlatma: new hafıza yer açmak için kullanıyoruz.
+// new Promise()  ve object constructure
+let result2= new person2("ADI44","SOYADI44");
+
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // DOM
