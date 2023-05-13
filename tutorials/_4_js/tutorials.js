@@ -982,36 +982,48 @@ let person2 = function (name, surname) {
     console.log(this);
 }
 
-// hatırlatma: new hafıza yer açmak için kullanıyoruz.
-// new Promise()  ve object constructur
-let result2 = new person2("ADI44", "SOYADI44");
-console.log("***************");
+// // hatırlatma: new hafıza yer açmak için kullanıyoruz.
+// // new Promise()  ve object constructur
+// let result2 = new person2("ADI44", "SOYADI44");
+// console.log("***************");
 
-// hasOwnProperty: objedeki Key(attributes) emin olmak için
-console.log("result2 objesinde böyle bir attribute var mı ?" + result2.hasOwnProperty("name"));
-console.log("***************");
+// // hasOwnProperty: objedeki Key(attributes) emin olmak için
+// console.log("result2 objesinde böyle bir attribute var mı ?" + result2.hasOwnProperty("name"));
+// console.log("***************");
 
-// built-in-constructor: sisteme kendi yazdığımız fonksiyonu ekleme
-// sayının küpü alan built-in-constructor
-//String.prototype.hamitMizrakCupe
-let hamitMizrakCupe = (number) => {
-    const temp= Number(Math.pow(number, 3));
-    alert(temp);
-    return temp;
-}
-console.log(hamitMizrakCupe(3));
+// // built-in-constructor: sisteme kendi yazdığımız fonksiyonu ekleme
+// // sayının küpü alan built-in-constructor
+// //String.prototype.hamitMizrakCupe
+// let hamitMizrakCupe = (number) => {
+//     const temp= Number(Math.pow(number, 3));
+//     alert(temp);
+//     return temp;
+// }
+// console.log(hamitMizrakCupe(3));
 
-String.prototype.hamitMizrakCupe=(number) => {
-    const temp= Number(Math.pow(number, 3));
-    alert(temp);
-    return temp;
-}
-let studentValue = "".hamitMizrakCupe(4);
+// String.prototype.hamitMizrakCupe=(number) => {
+//     const temp= Number(Math.pow(number, 3));
+//     alert(temp);
+//     return temp;
+// }
+// let studentValue = "".hamitMizrakCupe(4);
+
+// verilen bir sayının mutkağını bulan built-in-constructor yazınız ?
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-// DOM
-// event
+
+// event: olay ( bir işlem sonucunda çalışan)
+let onClickDeneme = () => {
+    console.log("Clicked ! ")
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 // listener
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+// DOM
 // local storage
 // jquery nedir ?
 // Git / Linux Codes
