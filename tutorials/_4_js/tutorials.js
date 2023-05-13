@@ -870,7 +870,8 @@ promisefnc2.then(() => {
 // resolve => then() düşer
 // reject  => catch() düşer
 // Kullanıcı 
-
+// resolve ve reject sonuç => then
+// then hata => catch
 let promisefnc3 = new Promise((resolve, reject) => {
     let status = 200;
     if (status === 200)
@@ -878,11 +879,12 @@ let promisefnc3 = new Promise((resolve, reject) => {
     else
         return reject("HAYIR");
 }).then(() => {
+consolex.log("YES");
 console.log("YES");
 }).catch((err) => {
-    console.log(err)
-    //console.log(err.name)
-    //console.log(err.message)
+    console.error(err)
+    //console.error(err.name)
+    //console.error(err.message)
 });
 console.log(promisefnc3)
 
