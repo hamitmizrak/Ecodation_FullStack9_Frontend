@@ -26,8 +26,22 @@
     <hr>
     <button class="btn btn-primary" onclick="onClickDeneme()">onclick</button>
     <button class="btn btn-primary" onclick="alert('on click')">alert</button>
+   
     <a href="http://www.google.com" class="btn btn-primary" onclick="alert('on click')">web site-1</a>
+    <!-- window.location -->
     <button class="btn btn-primary" onclick="window.location='http://www.google.com'">web site-2</button>
+   
+    <!-- window.confirm ve window.location -->
+    <button class="btn btn-primary" onclick="confirmLocationFnc()">web site-3</button>
+    <script>
+        let confirmLocationFnc = () => {
+            let result =
+                window.confirm('Gitmek istiyor musunuz ?')
+                    ? window.location = 'http://www.google.com'
+                    : window.alert("Bu sayfada kalındı");
+            console.log(result)
+        }
+    </script>
 
     <hr />
     <button class="btn btn-primary" ondblclick="onClickDeneme()">ondblclick</button><br> <br>
@@ -52,8 +66,9 @@
         //addEventListener(event,callbackfnc);
         let listenerData = document.getElementById('param1');
         // DİKKAT: on başına yazmıyorsunuz. => click, dblclick, mouseover
-        listenerData.addEventListener("dblclick", function (e) { alert("Tıklandı " + e.preventDefault) });
+        listenerData.addEventListener("dblclick", function (e) { alert("Tıklandı =>" + e.preventDefault+" =>"+e.target) });
         // preventDefault: Browsera diyor ki sen bir şey yapma.
+        
     </script>
 
 
