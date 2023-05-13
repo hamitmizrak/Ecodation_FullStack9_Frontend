@@ -866,6 +866,11 @@ promisefnc2.then(() => {
     console.log(error.name);
     console.log(error.message);
 });
+
+// Callbackfunction (ES6)
+// Promise (ES7)
+// Async/await (ES8)
+
 // eğer Promise'da;
 // resolve => then() düşer
 // reject  => catch() düşer
@@ -879,17 +884,40 @@ let promisefnc3 = new Promise((resolve, reject) => {
     else
         return reject("HAYIR");
 }).then(() => {
-consolex.log("YES");
-console.log("YES");
+    //consolex.log("YES");
+    //console.log("YES");
 }).catch((err) => {
     console.error(err)
     //console.error(err.name)
     //console.error(err.message)
 });
-console.log(promisefnc3)
+//console.log(promisefnc3)
 
-// promise function
-// async await function
+// promise function (ES7)
+// async/await function (ES8)
+let asynAwaitfnc1 = async () => {
+    try {
+        let status = 200;
+        // 1.YOL
+        // if (status === 200)
+        //     return "EVET";
+        // else
+        //     return "HAYIR";
+
+        // 2.YOL
+        // Ternary
+         const result1 = await (status === 200) ? "EVET" : "HAYIR";
+
+        // 3.YOL
+        // ternary alternative: 200 eşitse true değilse false
+        const result2 = status === 200 && "EVET";
+        console.log(result2)
+    } catch (error) {
+        console.err(error)
+    }
+};
+asynAwaitfnc1();
+
 // Örnekler
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // object
