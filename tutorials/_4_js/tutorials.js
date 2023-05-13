@@ -1013,17 +1013,18 @@ let person2 = function (name, surname) {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 // event: olay ( bir işlem sonucunda çalışan)
-let onClickDeneme = () => {
-    console.log("Clicked ! ")
-}
+// let onClickDeneme = () => {
+//     console.log("Clicked ! ")
+// }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-// listener
-//addEventListener(event,callbackfnc);
-let listenerData=document.getElementById('param1');
-listenerData.addEventListener("click",function(e){alert("Tıklandı "+e.preventDefault)});
-// preventDefault: Browsera diyor ki sen bir şey yapma.
+// // listener
+// //addEventListener(event,callbackfnc);
+// let listenerData=document.getElementById('param1');
+// // DİKKAT: on başına yazmıyorsunuz. => click, dblclick, mouseover
+// listenerData.addEventListener("dblclick",function(e){alert("Tıklandı "+e.preventDefault)});
+// // preventDefault: Browsera diyor ki sen bir şey yapma.
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
