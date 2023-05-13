@@ -787,26 +787,26 @@ let dorduncu = (callBackFunction) => {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // setInterval: fonkiyonunun çalışmasını bekliyor.
 // setInterval => 1.YOL
-let customer1=()=>{
+let customer1 = () => {
     //setInterval(callbackfnc(),ms)
-    setInterval(function (){
+    setInterval(function () {
         alert("1.müşteri");
-    },3000);
+    }, 3000);
 }
-let customer2=()=>{alert("2.müşteri");}
+let customer2 = () => { alert("2.müşteri"); }
 
 //customer1()
 //customer2()
 
 ///////////////////////////////// 
 // setInterval => 2.YOL
-let customer3=()=>{
+let customer3 = () => {
     //setInterval(callbackfnc(),ms)
-    setInterval(()=>{
+    setInterval(() => {
         alert("3.müşteri");
-    },3000);
+    }, 3000);
 }
-let customer4=()=>{alert("4.müşteri");}
+let customer4 = () => { alert("4.müşteri"); }
 
 //customer3()
 //customer4()
@@ -816,12 +816,12 @@ let customer4=()=>{alert("4.müşteri");}
 // 1-) CallBackFnc 
 // Kullanıcıdan alınan sayıyı mutlak değere çeviren aalgoritma ?
 let data1 = (number) => {
-   let result= Math.abs(number);
+    let result = Math.abs(number);
     alert(result)
 }
 
-let data2=(callbackfnc)=>{
-    let number = Number(prompt("Lütfen bir sayı giriniz")); 
+let data2 = (callbackfnc) => {
+    let number = Number(prompt("Lütfen bir sayı giriniz"));
     callbackfnc(number)
 }
 // Dikkat: Functionda kullandığımız parantezi kullanmıyoruz. () 
@@ -835,23 +835,22 @@ let data2=(callbackfnc)=>{
 // pending: bekleme
 
 // 1.Gösterim Promise 
-let promisefnc=new Promise((resolve,reject)=>{
+let promisefnc = new Promise((resolve, reject) => {
     // JS senkron çalışır.
     // promise: ya resolve döner yada reject
     resolve("olumlu sonuçlandı");
     //reject("olumsuz sonuçlandı")
 });
-console.log(promisefnc)
+//console.log(promisefnc)
 
 // 1.Gösterim Promise 
-let promisefnc2=new Promise((resolve,reject)=>{
+let promisefnc2 = new Promise((resolve, reject) => {
     // JS senkron çalışır.
     // promise: ya resolve döner yada reject
     resolve("olumlu sonuçlandı");
     //reject("olumsuz sonuçlandı")
-}).then().then().then(()=>{}).catch(()=>{});
-console.log(promisefnc2)
-
+}).then().then().then(() => { }).catch(() => { });
+//console.log(promisefnc2)
 
 // then:  eğer promise'dan bir sonuç dönerse çalışır
 // catch: eğer promise'dan bir sonuç dönmezse çalışır. 
@@ -860,14 +859,32 @@ promisefnc2.then().catch();
 // catch: (Dikkat: 1 tane catch vardır)
 promisefnc2.then().then().then().catch();
 
+promisefnc2.then(() => {
 
-promisefnc2.then(()=>{
-
-}).catch((error)=>{
+}).catch((error) => {
     console.log(error);
     console.log(error.name);
     console.log(error.message);
 });
+// eğer Promise'da;
+// resolve => then() düşer
+// reject  => catch() düşer
+// Kullanıcı 
+
+let promisefnc3 = new Promise((resolve, reject) => {
+    let status = 200;
+    if (status === 200)
+        return resolve("EVET");
+    else
+        return reject("HAYIR");
+}).then(() => {
+console.log("YES");
+}).catch((err) => {
+    console.log(err)
+    //console.log(err.name)
+    //console.log(err.message)
+});
+console.log(promisefnc3)
 
 // promise function
 // async await function
