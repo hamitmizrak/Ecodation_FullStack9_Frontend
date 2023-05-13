@@ -706,6 +706,7 @@ let arrayTutorials5 = function () {
     let array = arrayDataSet();
 
     // forEach(döngü)
+    // Diziyi etkilemiyor
     // forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
     console.log("*** ForEach *****");
     let donguData = array.forEach((value, index, array) => {
@@ -714,6 +715,7 @@ let arrayTutorials5 = function () {
 
 
     // filter ( filtreleme )
+    // Diziyi etkilemiyor
     // filter(predicate: (value: T, index: number, array: T[]) => unknown, thisArg?: any): T[];
     console.log("*** Filter *****");
     let filterData =
@@ -725,6 +727,7 @@ let arrayTutorials5 = function () {
         });
 
     // map(eşleme)
+    // Diziyi etkilemiyor
     // map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[];
     console.log("*** Filter *****");
     let eslemeData = array.map((value, index, array) => {
@@ -734,13 +737,15 @@ let arrayTutorials5 = function () {
     });
 
     // fill(dilim)
+    // Dikkat dizi üzerinden manipülasyon sağlıyor diziyi etkiliyor
     // fill(value: T, start?: number, end?: number): this;
     console.log("*** Fill *****");
-    let doldurData= array.fill(3);
-    console.log(doldurData)
-
+    let doldurData = array.fill(3);
+    console.log(doldurData);
+    let doldurData2 = array.fill(0, 2, 4);
+    console.log(doldurData2)
 }
-arrayTutorials5()
+//arrayTutorials5()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // senkron , asenkron nedir
@@ -780,6 +785,41 @@ let dorduncu = (callBackFunction) => {
 //dorduncu(ucuncu)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+let customer1=()=>{
+    //setInterval(callbackfnc(),ms)
+    setInterval(function (){
+        alert("1.müşteri");
+    },3000);
+}
+let customer2=()=>{alert("2.müşteri");}
+
+customer1()
+customer2()
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 1-) CallBackFnc 
+// Kullanıcıdan alınan sayıyı mutlak değere çeviren aalgoritma ?
+let data1 = (number) => {
+   let result= Math.abs(number);
+    alert(result)
+}
+
+let data2=(callbackfnc)=>{
+    let number = Number(prompt("Lütfen bir sayı giriniz")); 
+    callbackfnc(number)
+}
+
+//data2(data1);
+
+
+
+// 2-) Promise 
+// Kullanıcıdan alınan sayıyı mutlak değere çeviren aalgoritma ?
+
+
 // promise function
 // async await function
 // Örnekler
