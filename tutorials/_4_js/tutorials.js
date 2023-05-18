@@ -1029,8 +1029,11 @@ let person2 = function (name, surname) {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 // DOM
-// local storage
+// local storage, session storage
 // jquery nedir ?
+// PROJECT-1 ==> KDV Hesaplama html5/css3/RD/bootstrap/jQuery (localStorage ile)
+// PROJECT-2 ==> jQuery Java Post.
+
 // Git / Linux Codes
 
 // ÖDEV
@@ -1041,8 +1044,8 @@ let person2 = function (name, surname) {
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
-// PROJECT-1 ==> KDV Hesaplama html5/css3/RD/bootstrap/jQuery
-// PROJECT-2 ==> jQuery Java Post.
+
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // ARA TATİL

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Local Storage Form Input</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- font-awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body class="container bg-dark text-white">
+    <!-- start codes -->
+
+    <p class="display-4 text-center">Form Local Storage</p>
+    <div class="container">
+        <div class="row">
+            <!-- email -->
+            <div class="form-group mb-4">
+                <div class="col-md-1">
+                    <i class="fa-solid fa-envelope text-warning" style="font-size: 2rem;"></i>
+                </div>
+                <div class="col-md">
+                    <input type="email" name="email_data" id="email_data" class="form-control" required="true" autofocus="true"
+                        placeholder="your email address ...">
+                </div>
+            </div>
+
+             <!-- password -->
+             <div class="form-group mb-4">
+                <div class="col-md-1">
+                    <i class="fa-solid fa-unlock-keyhole text-warning" style="font-size: 2rem;"></i>
+                </div>
+                <div class="col-md">
+                    <input type="password" name="password_data" id="password_data" class="form-control" required="true" autofocus="false"
+                        placeholder="your password ...">
+                </div>
+            </div>
+
+            <!-- password -->
+            <div class="form-group">
+                <div class="col-md-1"> </div>
+                <div class="col-md">
+                 <input type="reset" class="btn btn-danger" value="Reset">
+                 <button type="submit" class="btn btn-primary"> Gönder</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- end codes -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- external js -->
+    <script src="localStorageExternal.js"></script>
+</body>
+
+</html>
