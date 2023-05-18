@@ -1,13 +1,13 @@
-const submitButton = (event) => {
+const submitButton = (e) => {
     // browser submit işlemlerinde
-    //event.preventDefault();
+    e.preventDefault();
 
     // JAVASCRIPT
     let emailData =document.getElementById("email_data").value;
     //console.log(emailData);
     
     // localStorage
-    let localStorageEmail=localStorage.setItem("email",emailData);
+    let localStorageSetEmail=localStorage.setItem("email",emailData);
     let localStorageGetEmail=localStorage.getItem("email");
     console.log(localStorageGetEmail);
 
@@ -20,8 +20,19 @@ const submitButton = (event) => {
     // console.log(`${passwordData}`);
 
     // localStorage
-    let localStoragePassword=localStorage.setItem("password",passwordData);
+    let localStorageSetPassword=localStorage.setItem("password",passwordData);
     console.log(localStorage); 
     let localStorageGetPassword=localStorage.getItem("password");
     console.log(localStorageGetPassword); 
+}
+
+
+const submitHide=()=>{
+    $("#form_data").hide(2000);
+}
+
+const submitShow=()=>{
+    $("#form_data").show(2000);
+    $("#form_data").css("backgroundColor","red")
+    $("#form_data").css("padding","2rem")
 }
