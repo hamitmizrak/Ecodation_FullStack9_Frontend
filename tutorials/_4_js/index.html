@@ -17,11 +17,47 @@
             margin: 0 auto;
             padding: 4rem;
         }
+
+        .domCss{
+            color: blue;
+            background-color:orange;
+            font-size:3rem;
+        }
     </style>
 </head>
 
 <body class="container">
+
+    <p class="display-3">DOM</p>
+    <p  name="sub_name" id="dom_id">Tarih:</p>
+    <button  id="sub_id" class="btn btn-primary" onclick="showDate()">Date Show</button>
+    <script>
+        let showDate=()=>{
+            //alert("Tıklandı");
+            // getElementById
+
+            //getElementsByName
+            //
+            let valueData=document.getElementById("dom_id");
+            // HTML
+            // valueData.innerHTML="<b>"+new Date()+"</b>";
+            // valueData.innerHTML=`<b> ${new Date()} </b>`;
+
+            // TEXT
+            valueData.innerText=`<b> ${new Date()} </b>`;
+
+            // CSS
+            // valueData.style.color="blue";
+            // valueData.style.backgroundColor="orange";
+            // valueData.style.fontSize="3rem";
+            valueData.classList.add("domCss");
+        }
+    </script>
+
+
+
     <br><br>
+    <hr>
     <p class="display-3">EVENT</p>
     <hr>
     <button class="btn btn-primary" onclick="onClickDeneme()">onclick</button>
