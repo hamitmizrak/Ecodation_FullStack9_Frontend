@@ -1,0 +1,26 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0px;
+}
+
+.input_container .input_icon{
+    position: absolute;
+}
+
+.input_icon{
+    color:rgba(100,100,100,.8);
+    padding: .8rem;
+    font-size: 1.4rem;
+}
+
+.input_class{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+    padding: .4rem;
+}
