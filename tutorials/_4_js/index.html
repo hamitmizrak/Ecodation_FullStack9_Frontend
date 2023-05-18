@@ -54,6 +54,28 @@
         }
     </script>
 
+    <script>
+        // KULLANMA ==> user,name, username, password
+        // localStorage: Browserda verileri saklamaya yarar.
+        // SET => KEY:VALUE
+        // sessionStorage: logout dead
+        // localStorage
+        const userDataSetName= localStorage.setItem("adi","Hamit");
+        const userDataSetSurname= localStorage.setItem("soyadi","Mızrak");
+        console.log(localStorage);
+
+        // GET => KEY
+        const userDataGetName=localStorage.getItem("adi");
+        console.log(userDataGetName.toUpperCase());
+
+        // removeItem ==> sadece key olanı sildim
+        const userDataRemove=localStorage.removeItem("adi");
+        console.log(userDataRemove);
+
+        const userDataClear= localStorage.clear();
+        console.log(localStorage);
+    </script>
+
 
 
     <br><br>
