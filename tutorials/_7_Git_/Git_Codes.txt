@@ -1,0 +1,95 @@
+### Version ###
+git --version 
+git -v
+
+##############################################################################
+### Config ###
+git config --global -l
+git config --global user.name 
+git config --global user.name "hamitmizrak"
+git config --global user.email
+git config --global user.email "hamitmizrak@gmail.com"
+
+# DİKKAT: Window kullanırsak PATH Eklemelisin.(notepad++)
+git config --global core.editor "notepad++"
+
+git log --all --graph --decorate --oneline
+git config --global alias.takma "log --all --decorate --graph --all"
+git config --global -l
+git takma
+
+##############################################################################
+### GİTHUB (Microsoft)###
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/hamitmizrak/git_tutorials.git
+git push -u origin main
+
+
+##############################################################################
+### GIT CREATE ###
+git init 
+git add .
+git add dosyaAdi.txt 
+git add dosya* 
+git rm --cached dosyaAdi.txt
+
+git commit -m "commit -1"
+git commit --amend -m "commit adını değiştir"
+
+git remote add origin https://github.com/hamitmizrak/git_tutorials.git
+git remote 
+
+git push -u origin master (BİRİNCİDE BÖYLE YAZILIR)
+git pull
+
+##############################################################################
+### GIT SÜREKLİ ###
+git add .
+git commit -m "second commit"
+git push
+
+##############################################################################
+### GIT CLONE ###
+git clone gitHubURL
+
+##############################################################################
+### GIT SKK ###
+git status
+git log
+git --help VEYA git -h
+
+##############################################################################
+### GIT DIFF ###
+git log
+git diff commit1 commit2
+git diff 82836d9  8cdcbbf
+
+
+##############################################################################
+### GIT IGNORE ###
+Git tarafından takip edilmesini istemediğimiz durumlarda
+
+
+##############################################################################
+### GIT STASH ###
+git status
+git add .
+git stash save "database"
+git stash list
+git stash apply stash@{1}
+
+##############################################################################
+### GIT BRANCH ###
+git status 
+git add .
+git commit -m "last commit"
+git push
+git status 
+git branch --all
+git branch frontend
+git checkout frontend 
+git checkout master
+git merge frontend
