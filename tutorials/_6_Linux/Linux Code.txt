@@ -1,0 +1,86 @@
+### Sistem Ön Yüklemesi ###
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
+### PORT ###
+sudo ufw status
+sudo ufw enable
+netstat -nlptu
+
+1-1023
+1024-49151
+49152-65535
+
+### Http Status Codes ###
+1XX ==> Information
+2XX ==> Success
+3XX ==> Redirection
+4XX ==> Client Error 
+5XX ==> Server Error
+
+### Http Status Codes ###
+Window => FAT, NTFS 
+Linux  => Ext2
+
+### Dosya Dizin ######
+d rwx rwx rwx 1 root root
+- rwx rwx rwx 1 root root
+
+r: read     = 2^2=4
+w: write    = 2^1=2
+x: eXecute  = 2^0=1
+777
+7   5      5
+rwx r-x    r-x
+
+### Escape ###
+\ = escape character için 
+New\ folder
+
+### SKK ###
+clear
+sudo apt-get install net-tools
+pwd: Print Working Directory 
+
+cd : Change Directory  
+cd .
+cd ..
+cd /
+cd ~
+
+history
+
+ls: list
+ls -a 
+ls -al
+ls -t
+
+# Dizin oluşturmak/Silmek
+mkdir deneme44
+rmdir deneme44 
+
+# Dosya oluşturmak/Silmek
+touch deneme.txt
+cat deneme.txt 
+rm  -r  file.txt
+rm -r New\ folder
+rm deneme.txt
+cat deneme.txt    (OKUMA)
+tac deneme.txt    (TERSTEN OKUMA)
+cat > deneme.txt  (YAZMA herşeyi sil sona ekle)
+cat >> deneme.txt (YAZMA sadece sona ekle)
+
+# MOVE (HEM TAŞIMA HEM İSİM DEĞİŞTİRME)
+mv deneme.txt deneme1.txt (İSİM DEĞİŞTİRME)
+mv deneme.txt java1 (TAŞIMA)
+ 
+# COPY 
+cp deneme.txt deneme2.txt
+
+
+
+
+
+
+
+
